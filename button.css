@@ -1,0 +1,28 @@
+.btn {
+    font-size: 0.9rem;
+    padding:0.5rem 1rem;
+    margin : 1rem;
+	border-radius : 5px;
+    border: none;
+}
+
+.btn-default {
+    color:#322214;
+	background : #82ff9e;  
+}
+.btn-default:hover {
+    background: #00A323;
+    color:white
+}
+.btn-link {
+    color:blue;
+    background: white;
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+.btn-FAB {
+    padding:1rem;
+    border-radius: 100%;
+    background : #82ff9e; 
+}
