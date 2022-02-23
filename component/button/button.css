@@ -1,0 +1,114 @@
+:root {
+    --primary-color: #2563ebff;
+    --secondary-color:#095256ff;
+    --white: #ffffff;
+  }
+  
+
+.btn {
+    display: inline-block;
+    font-size: 1rem;
+    padding:0.3125rem 1rem;
+    margin: 0.0625rem 0.125rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    vertical-align: center;
+    border: 1px solid transparent;
+    cursor: pointer;
+    height: 2.25rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color:white;
+}
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color:white;  
+}
+.btn-link {
+    color:var(--primary-color);
+    background: white;
+    text-decoration: underline;
+}
+
+
+.btn-floating {
+    font-size: 3.125rem;
+    padding: 0.75rem;
+    cursor: pointer;
+    border-radius: 100%;
+    border: 1px solid transparent;
+    background-color: var(--primary-color);
+    color:white;
+    height: 1em;
+    width: 1.2em;
+    box-shadow: 3px 4px 10px -2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 4px 10px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 4px 10px -2px rgba(0,0,0,0.75);
+}
+
+
+.btn-floating i {
+    font-size: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-large {
+    font-size: 4.25rem;
+
+}
+
+
+.btn-outline-primary {
+    color:var(--primary-color);
+    background-color: var(--white);
+    border-color: #0d6efd;
+}
+/* .btn-floating.btn-large
+{
+    padding: 1.25rem;
+
+} */
+
+
+
+
+/* .btn-large i {
+    font-size: 50%;
+} */
+
+/* .btn-floating.btn-large i 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+}
+/* .btn-default {
+    color:#322214;
+	background : var(--primary-color);  
+}
+.btn-default:hover {
+    background: #00A323;
+    color:white
+}
+.btn-link {
+    color:blue;
+    background: white;
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+.btn-FAB {
+    padding:1rem;
+    border-radius: 100%;
+    background : #82ff9e; 
+} */
