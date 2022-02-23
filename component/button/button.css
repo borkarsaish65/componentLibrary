@@ -1,10 +1,3 @@
-:root {
-    --primary-color: #2563ebff;
-    --secondary-color:#095256ff;
-    --white: #ffffff;
-  }
-  
-
 .btn {
     display: inline-block;
     font-size: 1rem;
