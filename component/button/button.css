@@ -28,7 +28,6 @@
     text-decoration: underline;
 }
 
-
 .btn-floating {
     font-size: 3.125rem;
     padding: 12px;
@@ -44,7 +43,6 @@
     -moz-box-shadow: 3px 4px 10px -2px var(--box-shadow-color);
 }
 
-
 .btn-floating i {
     font-size: 45%;
     display: flex;
@@ -57,54 +55,14 @@
 
 }
 
-
 .btn-outline-primary {
     color:var(--primary-color);
     background-color: var(--white);
     border-color: #0d6efd;
 }
-/* .btn-floating.btn-large
-{
-    padding: 1.25rem;
-
-} */
-
-
-
-
-/* .btn-large i {
-    font-size: 50%;
-} */
-
-/* .btn-floating.btn-large i 
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .row {
     display: flex;
     justify-content: space-around;
     height: 100px;
 }
-/* .btn-default {
-    color:#322214;
-	background : var(--primary-color);  
-}
-.btn-default:hover {
-    background: #00A323;
-    color:white
-}
-.btn-link {
-    color:blue;
-    background: white;
-    text-decoration: underline;
-    cursor:pointer;
-}
-
-.btn-FAB {
-    padding:1rem;
-    border-radius: 100%;
-    background : #82ff9e; 
-} */
