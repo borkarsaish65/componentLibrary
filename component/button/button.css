@@ -1,0 +1,68 @@
+:root {
+    --box-shadow-color:rgba(0,0,0,0.75)
+}
+.btn {
+    display: inline-block;
+    font-size: 1rem;
+    padding:10px 1rem;
+    margin: 0.0625rem 2px;
+    border-radius: 4px;
+    text-align: center;
+    vertical-align: center;
+    border: 1px solid transparent;
+    cursor: pointer;
+    height: 2.25rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color:white;
+}
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color:white;  
+}
+.btn-link {
+    color:var(--primary-color);
+    background: white;
+    text-decoration: underline;
+}
+
+.btn-floating {
+    font-size: 3.125rem;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 100%;
+    border: 1px solid transparent;
+    background-color: var(--primary-color);
+    color:white;
+    height: 1em;
+    width: 1.2em;
+    box-shadow: 3px 4px 10px -2px var(--box-shadow-color);
+    -webkit-box-shadow: 3px 4px 10px -2px var(--box-shadow-color);
+    -moz-box-shadow: 3px 4px 10px -2px var(--box-shadow-color);
+}
+
+.btn-floating i {
+    font-size: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-large {
+    font-size: 4.25rem;
+
+}
+
+.btn-outline-primary {
+    color:var(--primary-color);
+    background-color: var(--white);
+    border-color: #0d6efd;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+}
