@@ -1,0 +1,76 @@
+.badge {
+    font-size: 0.70em;
+    display: inline-block;
+    text-align: center;
+    border-radius: 0.25rem;
+    padding: 0.35em 0.65em;
+    min-width: 1em;
+}
+
+.btn .badge {
+    position: relative;
+    top: -1px;
+}
+
+.bg-primary {
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
+.bg-secondary {
+    color: var(--white);
+    background-color: var(--secondary-color);
+}
+
+.bg-danger {
+    color: var(--white);
+    background-color: rgb(255, 67, 67);
+}
+
+.bg-online {
+    background-color: #01ac01;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    padding: 0;
+}
+
+.bg-offline {
+    background-color: #ac0126;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    padding: 0;
+}
+
+.badge-relative {
+    position: relative;
+}
+
+.badge-relative .bg-top-right {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    transform: translate(-50%, -50%)
+}
+
+.badge-avatar-default {
+    position: absolute;
+    left: 61px;
+    top: 55px;
+    transform: translate(-50%, -50%);
+}
+
+.badge-avatar-small {
+    position: absolute;
+    left: 33px;
+    top: 30px;
+    transform: translate(-50%, -50%);
+}
+
+.badge-avatar-xxsmall {
+    position: absolute;
+    left: 21px;
+    top: 20px;
+    transform: translate(-50%, -50%);
+}
