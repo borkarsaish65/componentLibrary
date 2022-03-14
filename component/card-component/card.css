@@ -1,0 +1,130 @@
+:root{
+    --card-shadow:rgba(0,0,0,0.75);
+    --card-success:#32d22c;
+    --card-danger:#e02727;
+}
+.card {
+    position: relative;
+    width:14.625rem;
+    border:1px solid rgba(0,0,0,.125);
+    border-radius: 5px;
+}
+
+.card-horizontal {
+    width: 540px;
+}
+
+.card .card-badge-container {
+    display: flex;
+    padding:10px 12px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+.card-badge-container span {
+    margin: 0 8px;
+}
+
+.card-badge-container.success {
+    background-color: var(--card-success);
+    color:white;
+}
+
+.card-badge-container.primary {
+    background-color: var(--primary-color);
+    color:white;
+}
+
+.card-badge-container.danger {
+    background-color:var(--card-danger);
+    color:white;
+}
+
+.card .card-dismiss {
+    position: absolute;
+    left:13rem;
+    padding:3px;
+    cursor:pointer;
+    height: 18px;
+    width: 18px;
+    top:2px;
+}
+.card .card-dismiss.horizontal {
+    left:20.4rem;
+}
+
+.card .card-header{
+    font-size: 1.25rem;
+}
+
+.card p {
+    margin: 0;
+}
+.card .card-body{
+    font-size: 1.1rem;
+    padding:0.8rem;
+}
+
+.card .card-img {
+    width: 100%;
+    max-height: 200px;
+}
+
+.card .card-footer {
+    font-size: 1rem;
+}
+
+.card-footer,.card-header{
+    padding: 3px 7px;
+}
+
+.card .card-img-overlay {
+    position:absolute;
+    top:0;
+    color:white;
+}
+
+.card .links {
+    display: flex;
+    justify-content: space-around;
+}
+.card .links a{
+    color: lightblue;
+
+}
+
+
+.card .card-container
+{
+    display: flex;   
+}
+
+.card-container .card-section-a {
+    width: 35%;
+}
+
+.card-container .card-section-b {
+    width: 65%;
+    padding: 1.7rem 1px 0 0;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.card-shadow-low {
+    box-shadow: 2px 2px 8px -1px var(--card-shadow);
+-webkit-box-shadow: 2px 2px 8px -1px var(--card-shadow);
+-moz-box-shadow: 2px 2px 8px -1px var(--card-shadow);
+}
+
+.card-shadow {
+    box-shadow: 2px 2px 11px 0px var(--card-shadow);
+-webkit-box-shadow: 2px 2px 11px 0px var(--card-shadow);
+-moz-box-shadow: 2px 2px 11px 0px var(--card-shadow);
+}
+
+.card-shadow-large {
+    box-shadow: 8px 6px 22px 0px rgba(0,0,0,0.61);
+-webkit-box-shadow: 8px 6px 22px 0px rgba(0,0,0,0.61);
+-moz-box-shadow: 8px 6px 22px 0px rgba(0,0,0,0.61);
+}
