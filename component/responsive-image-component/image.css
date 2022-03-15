@@ -1,9 +1,24 @@
 .container {
-    height: 50%;
-    width: 50%;
+    width: 65%;
+    margin: 0 auto;
+    max-width: 400px;
 }
 
+.text-center {
+    text-align: center;
+}
 .img-responsive {
     height: auto;
     max-width: 100%;
+} 
+
+.mg-zero-auto
+{
+    margin: 0 auto;
+}
+.img-rounded {
+    border-radius: 50%;
+}
+.display-block{
+    display: block;
 }
