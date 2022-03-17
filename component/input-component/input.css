@@ -1,0 +1,73 @@
+:root {
+    --input-field-focus:#7fe8ff94;
+    --input-field-err:#ff232387;
+    --input-field-err-focus:#ff23234b;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.formDiv .input {
+    margin:0;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,.250);
+    height: 1.7rem;
+    font-size: 1rem;
+    padding: 5px 7px;
+}
+
+.formDiv .input:focus {
+    outline:3px solid var(--input-field-focus);
+}
+
+.flex {
+    display: flex;
+}
+.flex.justify-content-around {
+    justify-content: space-around;
+}
+
+.input.bottom-border {
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.250);
+}
+
+.formDiv .input.bottom-border:focus {
+    outline: none;
+    border-bottom:2px solid var(--input-field-focus);
+}
+
+.formDiv .input.error {
+    border: 1px solid var(--input-field-err);
+}
+.formDiv .input.error:focus {
+    outline:3px solid var(--input-field-err-focus);
+}
+
+.formDiv .input.input.bottom-border.error {
+    border: none;
+    border-bottom: 1px solid var(--input-field-err);
+}
+.formDiv .input.input.bottom-border.error:focus {
+    outline: none;
+    border-bottom:3px solid var(--input-field-err-focus);
+    border-radius:0px;
+}
+
+.flex .section {
+    padding: 0 10px;
+}
+.invalid-msg {
+    position: absolute;
+    top:100%;
+    padding:2px 5px;
+    max-width: 100%;
+    padding: 3px 7px;
+    margin-top: 0.1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: rgba(219, 8, 29, 0.788);
+    border-radius: 0.25rem;
+}

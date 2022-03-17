@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8706ae3761.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="input.css">
+    <title>Document</title>
+</head>
+<body>  
+    <div class="container">
+        <h4>Default Input Field</h4>
+        <p>This field will take up the entire available size horizontally.</p>
+        <div class="formDiv">
+                <label for="Name">Enter Name</label>
+                <input class="input" type="text">
+        </div>
+        <h4>Input Field with only bottom border</h4>
+        <div class="formDiv">
+                <label for="Name">Last Name</label>
+                <input class="input bottom-border" type="text">
+        </div>
+        <h4>Input Field with Error </h4>
+        <p>This field will take up the entire available size horizontally.</p>
+        <div class="formDiv">
+                <label for="Name">Enter Email</label>
+                <input class="input error" type="text">
+        </div>
+        <h4>Input Field with bottom border with Error</h4>
+        <div class="formDiv">
+                <label for="Name">Last Name</label>
+                <input class="input bottom-border error" type="text">
+        </div>
+
+
+        <h4>Sample Form with error tooltip</h4>
+        <p>This field will take up the entire available size horizontally.</p>
+        <div class="formDiv">
+            <div class="flex">
+                <div class="section position-relative">
+                    <label for="Name">First Name</label>
+                    <input class="input bottom-border error" type="text">
+                    <div class="invalid-msg">
+                        Please enter name.
+                    </div>
+                </div>
+                <div class="section position-relative">
+                    <label for="Name">Age</label>
+                    <input class="input bottom-border error" type="text"> 
+                    <div class="invalid-msg">
+                        Please enter age.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
