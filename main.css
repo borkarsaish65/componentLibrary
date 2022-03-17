@@ -4,3 +4,6 @@
     --white: #ffffff;
 }
 
+.position-relative {
+    position: relative;
+}
