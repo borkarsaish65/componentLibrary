@@ -1,3 +1,8 @@
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
 .h1,
 .h2,
 .h3,
@@ -45,13 +50,7 @@
     color: gray;
 }
 
-.list-collection.list-style-none {
-    list-style: none;
-}
-.list-collection .list-heading{
-    font-size:1.5625rem;
-    border-bottom: 1px solid black;
-}
-.list-collection .list-item {
-    padding:0.325rem 0;
+.example {
+    max-width: 100%;
+    height: auto;
 }
