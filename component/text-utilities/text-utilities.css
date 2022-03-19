@@ -1,0 +1,51 @@
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    margin: 0;
+}
+
+.h1 {
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.h2 {
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.h3 {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.h4 {
+    font-size: 1.75rem;
+    padding: 1rem;
+}
+
+.h5 {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.h6 {
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+
+.small-text {
+    font-size: 0.875rem;
+}
+
+.grey-text {
+    color: gray;
+}
+
+.example {
+    max-width: 100%;
+    height: auto;
+}
