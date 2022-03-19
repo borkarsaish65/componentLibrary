@@ -4,3 +4,10 @@
     --white: #ffffff;
 }
 
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
