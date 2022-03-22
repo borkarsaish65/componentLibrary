@@ -62,30 +62,108 @@
         </div>
         <div class="content">
 
-  
-                <button data-target="#taost-1" onclick="openToast(event)" class="btn btn-primary">Open Toast</button>
+            <div id="taost-2" class="toast-container hide center">
+                <div class="toast-header">
+                    Smart UI Toast
+                </div>
+                <div class="toast-body">
+                    <p> Toast placed at middle of the screen.</p>
+                </div>
+            </div>
 
-    
-                <div  id="taost-1"  class="toast-container hide">
-                    <div class="toast-header">
-                        Smart UI Toast
-                    </div>
-                    <div class="toast-body">
-                        <p> This is a basic toast!</p>
-                    </div>
+            <div  id="taost-1"  class="toast-container hide">
+                <div class="toast-header">
+                    Smart UI Toast
                 </div>
-            
-                <button data-target="#taost-2" onclick="openToast(event)" class="btn btn-primary">Open Toast</button>
-            
+                <div class="toast-body">
+                    <p> This is a basic toast!</p>
+                </div>
+            </div>
+
+            <h6 class="h6">Toasts/Snackbars</h6>
+            <p class="h6">Toasts are popups used to show message on the screen.</p>
+  
+
+            <h6 class="h6">Default Toasts</h6>
+            <p class="h6">Default toasts will appear on the top right section of the screen.</p>
+            <p class="h6">The toast will last for 2 seconds and disapear.</p>
+  
+
+            <div class="demo-container flex flex-all-center">
+                <button data-target="#taost-1" onclick="openToast(event)" class="btn btn-primary">Default Toast</button>
+            </div>
+
+                <h5 class="h5">
+                    Code Example
+                </h5>
+
+                <div class="demo-container flex space-around">
+                    <pre><code class="xml">
+         &lt;div  id=&quot;taost-1&quot;  class=&quot;toast-container hide&quot;&gt;
+         &lt;div class=&quot;toast-header&quot;&gt;
+             Smart UI Toast
+         &lt;/div&gt;
+         &lt;div class=&quot;toast-body&quot;&gt;
+             &lt;p&gt; This is a basic toast!&lt;/p&gt;
+         &lt;/div&gt;
+                    &lt;/div&gt;
+                    </code></pre>
+                </div>
+  
+    <p class="h6">The hide class in the toast need to be toggled with show class in order to show the toast.</p>
+
+    <h6 class="h6">Toast in the center</h6>
+    <p class="h6">Toast can be made to appear at the center of the screen by using 'center' class. </p>
+    <div class="demo-container flex flex-all-center">
+        <button data-target="#taost-2" onclick="openToast(event)" class="btn btn-primary">Center Toast</button>
+    </div>
+
+
+
+
+        <h5 class="h5">
+            Code Example
+        </h5>
+
+        <div class="demo-container flex space-around">
+            <pre><code class="xml">
+ &lt;div  id=&quot;taost-1&quot;  class=&quot;toast-container center hide&quot;&gt;
+ &lt;div class=&quot;toast-header&quot;&gt;
+     Smart UI Toast
+ &lt;/div&gt;
+ &lt;div class=&quot;toast-body&quot;&gt;
+     &lt;p&gt; This is a basic toast!&lt;/p&gt;
+ &lt;/div&gt;
+            &lt;/div&gt;
+            </code></pre>
+        </div>
+
+
+        <h5 class="h5">
+            Javascript Code Example
+        </h5>
+              
+        <p class="h6">If the toast is attached on the button onclick event need to be bind with openToast function. The button also need to have data-target attribute set to the id of the taost which needs to be displayed.</p>
+
+        <div class="demo-container flex space-around">
+            <pre><code class="javascript">
+                function openToast(event){
+
+                    let target = event.target;
+                    let id = target.getAttribute('data-target');
+                    let toast = document.querySelector(id);
                 
-                <div id="taost-2" class="toast-container hide center">
-                    <div class="toast-header">
-                        Smart UI Toast
-                    </div>
-                    <div class="toast-body">
-                        <p> Toast placed at middle of the screen.</p>
-                    </div>
-                </div>
+                    toast.classList.remove('hide')
+                    toast.classList.add('show')
+                
+                    setTimeout(()=>{
+                        toast.classList.remove('show')
+                        toast.classList.add('hide')
+                
+                    },2000)
+                }
+            </code></pre>
+        </div>
             
         </div>
 

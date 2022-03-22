@@ -656,3 +656,10 @@ Responsive image component
     color: gold;
 }
 
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
