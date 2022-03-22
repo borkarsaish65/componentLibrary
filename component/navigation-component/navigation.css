@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:12px 7px;
+    background-color: var(--primary-color);
+    font-size: 18px;
+}
+.navbar-list-collection {
+    margin: 0;
+}
+.navbar-list-collection li {
+    display: inline;
+    margin: 0 15px;
+}
+.navbar a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand, .navbar a{
+cursor: pointer;
+color: rgba(255, 255, 255, 0.753);
+}
+
+.navbar .navbar-brand:hover, .navbar a:hover{
+    color: white
+}
+
+.navbar-brand {
+    font-size: 22px;
+}

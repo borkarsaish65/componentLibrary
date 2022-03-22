@@ -92,7 +92,6 @@
 
 }
 
-
 .card .card-container
 {
     display: flex;   
@@ -105,10 +104,6 @@
 .card-container .card-section-b {
     width: 65%;
     padding: 1.7rem 1px 0 0;
-}
-
-.position-relative {
-    position: relative;
 }
 
 .card-shadow-low {
