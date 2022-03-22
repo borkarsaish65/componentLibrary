@@ -1,57 +1,227 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="../../main.css">
-    <link rel="stylesheet" href="button.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../smartui.css">
+    <title>Button Component</title>
 </head>
+
 <body>
-
-    <div class="container">
-
-        <div class="row">
-            <p>Primary Button</p>
-            <button type='button' class='btn btn-primary'>Click</button>
-        </div>
-        <div class="row">
-            <p>Secondary Button</p>
-            <button type='button' class='btn btn-secondary'>Click</button>
-
-        </div>
-        <div class="row">
-            <p>Icon Button</p>
-            <button type='button' class='btn btn-primary'>
-                <i class="far fa-address-card"></i>   
-            Generate ID
-           </button>
-        </div>
-
-        <div class="row">
-            <p>Link Button</p>
-
-            <button type='button' class='btn btn-link'>Click</button>
-      
-        </div>
-
-
-        <div class="row">
-            <p>Floating Action Button</p>
-            <button type='button' class='btn-floating'>
-                <i class="far fa-bell"></i> 
-               </button>
-            
-        </div>
-
-
-        <div class="row">
-            <p>Outline Button</p>
-            <button type='button' class='btn-outline-primary btn'>
-                Outline button
-               </button>
-        </div>
+    <div class="header">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="#">Smart UI</a>
+            </div>
+            <ul class="navbar-list-collection">
+                <li class="navbar-list-item"><a href="#">Home</a></li>
+                <li class="navbar-list-item"><a href="#">Profile</a></li>
+                <li class="navbar-list-item"><a href="#">Setting</a></li>
+            </ul>
+        </nav>
     </div>
+    <div class="web-page">
+        <div class="aside">
+            <div class="list-collection-container">
+
+                <ul class="list-collection list-style-none">
+                    <div class="list-heading">
+                        Get Started
+                    </div>
+                    <li class="list-item">
+                        <a href="../intro.html">Installation</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="list-collection-container">
+
+                <ul class="list-collection list-style-none">
+                    <div class="list-heading">
+                        Components
+                    </div>
+                    <li class="list-item"><a href="./alert/alert.html">Alert</a></li>
+                    <li class="list-item"><a href="../avatar-component/avatar.html">Avatar</a></li>
+                    <li class="list-item"><a href="../badge/badge.html">Badge</a></li>
+                    <li class="list-item active"><a href="../button/button.html">Button</a></li>
+                    <li class="list-item"><a href="../card-component/card.html">Card</a></li>
+                    <li class="list-item"><a href="../grid-component/grid.html">Grid</a></li>
+                    <li class="list-item"><a href="../input-component/input.html">Input</a></li>
+                    <li class="list-item"><a href="../navigation-component/navigation.html">Navigation</a></li>
+                    <li class="list-item"><a href="../responsive-image-component/image.html">Image</a></li>
+                    <li class="list-item"><a href="">Rating</a></li>
+                    <li class="list-item"><a href="../navigation-component/navigation.html">Navigation</a></li>
+                    <li class="list-item"><a href="../">Toast</a></li>
+                    <li class="list-item"><a href="../text-utilities/text-utilities.html">Typography</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <h4 class="h1">Buttons</h4>
+            <p class="h5">Smart UI library provides classes which can be used to enhance the styles of buttons.</p>
+
+            <h5 class="h5">
+                Examples
+            </h5>
+
+            <div class="demo-container">
+                <div class="sub-container flex space-around align-items-center">
+                    <h6 class="h6">Primary Button</h6>
+                    <button type='button' class='btn btn-primary'>Primary</button>
+                </div>
+                <div class="sub-container flex space-around align-items-center">
+                    <h6 class="h6">Secondary Button</h6>
+                    <button type='button' class='btn btn-secondary'>Secondary</button>
+                </div>
+                <div class="sub-container  flex space-around align-items-center">
+                    <h6 class="h6">Success Button</h6>
+                    <button type='button' class='btn btn-success'>Success</button>
+                </div>
+                <div class="sub-container  flex space-around align-items-center">
+                    <h6 class="h6">Danger Button</h6>
+                    <button type='button' class='btn btn-danger'>Danger</button>
+                </div>
+                <div class="sub-container  flex space-around align-items-center">
+                    <h6 class="h6">Link Button</h6>
+                    <button type='button' class='btn btn-link'>Click</button>
+
+                </div>
+            </div>
+
+
+            <h5 class="h5">
+                Code Example
+            </h5>
+
+            <div class="demo-container flex space-around">
+                <pre><code class="xml">
+            <h6 class="h6">Primary Button</h6>
+       &lt;button type=&#39;button&#39; class=&#39;btn btn-primary&#39;&gt;Primary&lt;/button&gt;
+
+            <h6 class="h6">Secondary Button</h6>
+       &lt;button type=&#39;button&#39; class=&#39;btn btn-secondary&#39;&gt;Secondary&lt;/button&gt;
+
+            <h6 class="h6">Success Button</h6>
+       &lt;button type=&#39;button&#39; class=&#39;btn btn-success&#39;&gt;Success&lt;/button&gt;
+
+            <h6 class="h6">Danger Button</h6>
+       &lt;button type=&#39;button&#39; class=&#39;btn btn-danger&#39;&gt;Danger&lt;/button&gt;
+
+            <h6 class="h6">Link Button</h6>
+       &lt;button type=&#39;button&#39; class=&#39;btn btn-link&#39;&gt;Click&lt;/button&gt;
+
+
+                </code></pre>
+            </div>
+
+            <h5 class="h5">
+                Outline Buttons
+            </h5>
+            <p class="h6">Outline buttons removes all background color and gives it a lighter look.</p>
+
+            <div class="demo-container">
+                <div class="sub-container flex space-around align-items-center">
+                    <h6 class="h6">Primary Button</h6>
+                    <button type='button' class='btn btn-outline-primary'>Primary</button>
+                </div>
+                <div class="sub-container flex space-around align-items-center">
+                    <h6 class="h6">Secondary Button</h6>
+                    <button type='button' class='btn btn-outline-secondary'>Secondary</button>
+                </div>
+                <div class="sub-container  flex space-around align-items-center">
+                    <h6 class="h6">Success Button</h6>
+                    <button type='button' class='btn btn-outline-success'>Success</button>
+                </div>
+                <div class="sub-container  flex space-around align-items-center">
+                    <h6 class="h6">Danger Button</h6>
+                    <button type='button' class='btn btn-outline-danger'>Danger</button>
+                </div>
+            </div>
+
+            <h5 class="h5">
+                Code Example
+            </h5>
+
+            <div class="demo-container flex space-around">
+                <pre><code class="xml">
+            <h6 class="h6">Primary Button</h6>
+    &lt;button type=&#39;button&#39; class=&#39;btn btn-outline-primary&#39;&gt;Primary&lt;/button&gt;
+
+            <h6 class="h6">Secondary Button</h6>
+    &lt;button type=&#39;button&#39; class=&#39;btn btn-outline-secondary&#39;&gt;Secondary&lt;/button&gt;
+
+            <h6 class="h6">Success Button</h6>
+    &lt;button type=&#39;button&#39; class=&#39;btn btn-outline-success&#39;&gt;Success&lt;/button&gt;
+
+            <h6 class="h6">Danger Button</h6>
+    &lt;button type=&#39;button&#39; class=&#39;btn btn-outline-danger&#39;&gt;Danger&lt;/button&gt;
+
+                </code></pre>
+            </div>
+
+
+            <h5 class="h5">
+                Icon Buttons
+            </h5>
+            <p class="h6">Icon button helps in giving extra information about the button by having icon present in the
+                button.</p>
+
+
+            <div class="demo-container">
+                <div class="sub-container flex space-around align-items-center">
+                    <p>Icon Button</p>
+                    <button type='button' class='btn btn-primary'>
+                        <i class="far fa-address-card"></i>
+                        Generate ID
+                    </button>
+                </div>
+            </div>
+
+            <h5 class="h5">
+                Code Example
+            </h5>
+
+            <div class="demo-container flex space-around">
+                <pre><code class="xml">
+     &lt;button type=&#39;button&#39; class=&#39;btn btn-primary&#39;&gt;
+         &lt;i class=&quot;far fa-address-card&quot;&gt;&lt;/i&gt;   
+      Generate ID
+    &lt;/button&gt;
+                </code></pre>
+            </div>
+
+
+            <h5 class="h5">
+                Floating Action Button
+            </h5>
+            <p class="h6">Floating action button acts as the call to action button on the screen.</p>
+            <p class="h6">It performs the primary action on a screen.</p>
+
+
+            <div class="demo-container">
+                <div class="sub-container flex space-around align-items-center">
+                    <p>Floating Action Button</p>
+                    <button type='button' class='btn-floating'>
+                        <i class="far fa-bell"></i>
+                    </button>
+                </div>
+            </div>
+
+            <h5 class="h5">
+                Code Example
+            </h5>
+
+            <div class="demo-container flex space-around">
+                <pre><code class="xml">
+   &lt;button type=&#39;button&#39; class=&#39;btn-floating&#39;&gt;
+       &lt;i class=&quot;far fa-bell&quot;&gt;&lt;/i&gt;
+   &lt;/button&gt;
+                </code></pre>
+            </div>
+        </div>
 </body>
+
 </html>

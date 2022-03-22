@@ -4,3 +4,109 @@
     --white: #ffffff;
 }
 
+.position-relative {
+    position: relative;
+}
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.flex{
+    display: flex;
+}
+.flex-all-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+.space-evenly{
+    justify-content: space-evenly;
+}
+.align-items-center{
+    align-items: center;
+}
+.img-responsive {
+    height: auto;
+    max-width: 100%;
+} 
+
+.mg-zero-auto
+{
+    margin: 0 auto;
+}
+.img-rounded {
+    border-radius: 50%;
+}
+.display-block{
+    display: block;
+}
+.hero-img {
+    width: 70%;
+}
+.page {
+    display: flex;
+}
+.page .aside {
+    width:20%; 
+    padding:0 15px;
+}
+.page .content {
+    flex-grow: 1; 
+}
+.aside {
+    font-size: 20px;
+}
+.aside a:hover{
+  color: var(--primary-color);
+}
+.aside li {
+    padding:10px !important;
+}
+.web-page .aside {
+    width:250px;
+    height: 100vh;
+    padding:1rem;
+    position: fixed;
+    overflow-y: auto;
+}
+.web-page .content {
+    margin-left: 250px;
+    padding:3rem;
+}
+
+.demo-container {
+    background: #edededb8;;
+    padding:1.5rem;
+    border-radius: 10px;
+    width: 60%;
+    margin: 0 auto;
+    overflow-y: auto;
+}
+.p1{
+    padding:1rem;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.background-white {
+    background: white;
+}
+
+.overflow-y-unset {
+    overflow-y: unset;
+}

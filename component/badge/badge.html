@@ -6,57 +6,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../../reset.css">
     <link rel="stylesheet" href="../../main.css">
-    <link rel="stylesheet" href="../button/button.css">
-    <link rel="stylesheet" href="badge.css">
-    <link rel="stylesheet" href="../avatar-component/avatar.css">
+    <link rel="stylesheet" href="../../smartui.css">
     <title>Document</title>
 </head>
 
 <body>
 
-    <button class="btn btn-primary">
-        Click Here <span class="badge bg-danger">5</span>
-    </button>
-
-    <button class="btn btn-secondary">
-        Click Here <span class="badge bg-danger">5</span>
-    </button>
-
-    <div style="margin-top:20px" class="container">
-        <button class="btn btn-primary badge-relative">
-            Inbox <span class="badge bg-danger bg-top-right">5+</span>
-        </button>
+    <div class="header">
+        <nav class="navbar">
+            <div class="navbar-brand">
+              <a href="#">Smart UI</a>
+            </div>
+            <ul class="navbar-list-collection">
+                <li class="navbar-list-item"><a href="#">Home</a></li>
+                <li class="navbar-list-item"><a href="#">Profile</a></li>
+                <li class="navbar-list-item"><a href="#">Setting</a></li>
+            </ul>
+        </nav>
     </div>
+    <div class="web-page">
+        <div class="aside">
+            <div class="list-collection-container">
+    
+                <ul class="list-collection list-style-none">
+                    <div class="list-heading">
+                       Get Started
+                    </div>
+                    <li class="list-item">
+                        <a href="../intro.html">Installation</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="list-collection-container">
+    
+                <ul class="list-collection list-style-none">
+                    <div class="list-heading">
+                       Components
+                    </div>
+                    <li class="list-item"><a href="../alert/alert.html">Alert</a></li>
+                    <li class="list-item"><a href="../avatar-component/avatar.html">Avatar</a></li>
+                    <li class="list-item active"><a href="../badge/badge.html">Badge</a></li>
+                    <li class="list-item"><a href="../button/button.html">Button</a></li>
+                    <li class="list-item"><a href="../card-component/card.html">Card</a></li>
+                    <li class="list-item"><a href="../grid-component/grid.html">Grid</a></li>
+                    <li class="list-item"><a href="../input-component/input.html">Input</a></li>
+                    <li class="list-item"><a href="../navigation-component/navigation.html">Navigation</a></li>
+                    <li class="list-item"><a href="../responsive-image-component/image.html">Image</a></li>
+                    <li class="list-item"><a href="">Rating</a></li>
+                    <li class="list-item"><a href="../navigation-component/navigation.html">Navigation</a></li>
+                    <li class="list-item"><a href="../">Toast</a></li>
+                    <li class="list-item"><a href="../text-utilities/text-utilities.html">Typography</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <h4 class="h1">Badges</h4>
+            <p class="h5">Badges are used to notify status of the user or it can also be used to show notification number.</p>
+
+            <h5 class="h5">
+                Avatar with badges
+            </h5>
+            <p class="h6">Badge can be used with smart ui avatar component easily. Below is a sample code to demonstrate that.</p>
+
+            <div class="demo-container flex space-around">
+                <div class="badge-container badge-relative"><img class='avatar' src="https://picsum.photos/200/300" alt="pic"> <span class="badge bg-online badge-avatar-default"></span></div>
+                <div class="badge-container badge-relative"><img class='avatar' src="https://picsum.photos/200/300" alt="pic"> <span class="badge bg-offline badge-avatar-default"></span></div>
+                <div class="badge-container badge-relative"><img class='avatar' src="https://picsum.photos/200/300" alt="pic"> <span class="badge bg-unavailable badge-avatar-default"></span></div>
+               
+            </div>
+
+            <h5 class="h5">
+                Code Example
+            </h5>
+
+            <div class="demo-container flex space-around">
+                <pre><code class="xml">
+      &lt;div class=&quot;badge-container badge-relative&quot;&gt;
+      &lt;img class=&#39;avatar&#39; src=&quot;https://picsum.photos/200/300&quot; alt=&quot;pic&quot;&gt;
+       &lt;span class=&quot;badge bg-online badge-avatar-default&quot;&gt;&lt;/span&gt;&lt;/div&gt;  
+                </code></pre>
+            </div>
+
+            <h5 class="h5">
+                Buttons with badges
+            </h5>
+            <p class="h6">Badges can also be used along with buttons. Below code demonstrating the same.</p>
+            <p class="h6">Below code demonstrating button with badge placed in top right corner.</p>
+
+            <div class="demo-container flex space-around">
+                <button class="btn btn-primary badge-relative">
+                    Inbox <span class="badge bg-danger bg-top-right">5+</span>
+                </button>
+                <button class="btn btn-primary badge-relative">
+                    Inbox <span class="badge bg-danger bg-top-right"> <i class="far fa-bell"></i> </span>
+                </button>
+            </div>
+
+            <h6 class="h6">
+               Code Example
+            </h6>
+
+            <div class="demo-container flex space-around">
+<pre><code class="xml">
+            &lt;button class=&quot;btn btn-primary badge-relative&quot;&gt;
+            Inbox &lt;span class=&quot;badge bg-danger bg-top-right&quot;&gt;5+&lt;/span&gt;
+            &lt;/button&gt;
 
 
-    <div style="margin-top:20px" class="container">
-        <button class="btn btn-primary badge-relative">
-            Inbox <span class="badge bg-danger bg-top-right"> <i class="far fa-bell"></i> </span>
-        </button>
+            &lt;button class=&quot;btn btn-primary badge-relative&quot;&gt;
+            Inbox &lt;span class=&quot;badge bg-danger bg-top-right&quot;&gt; &lt;i class=&quot;far fa-bell&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+            &lt;/button&gt;
+</code></pre>
+            </div>
+
+            <p class="h6">Below code demonstrating button with badge placed next to the button text.</p>
+
+            <div class="demo-container flex space-around">
+                <button class="btn btn-primary">
+                    Click Here <span class="badge bg-danger">5</span>
+                </button>
+            
+                <button class="btn btn-secondary">
+                    Click Here <span class="badge bg-danger">5</span>
+                </button>
+            
+            </div>
+            <h6 class="h6">
+                Code Example
+             </h6>
+
+             <div class="demo-container flex space-around">
+<pre><code class="xml">
+            &lt;button class=&quot;btn btn-primary badge-relative&quot;&gt;
+            Inbox &lt;span class=&quot;badge bg-danger bg-top-right&quot;&gt;5+&lt;/span&gt;
+            &lt;/button&gt;
+
+
+            &lt;button class=&quot;btn btn-primary badge-relative&quot;&gt;
+            Inbox &lt;span class=&quot;badge bg-danger bg-top-right&quot;&gt; &lt;i class=&quot;far fa-bell&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+            &lt;/button&gt;
+                </code></pre>
+                            </div>
+
+        </div>
     </div>
-
-    <div style="margin-top:20px" class="badge-container badge-relative">
-        <img class='avatar' src="https://picsum.photos/200/300" alt="pic">
-        <span class="badge bg-online badge-avatar-default"></span>
-    </div>
-
-    <div style="margin-top:20px" class="badge-container badge-relative">
-        <img class='avatar xxsmall' src="https://picsum.photos/200/300" alt="pic">
-        <span class="badge bg-online badge-avatar-xxsmall"></span>
-    </div>
-
-    <div style="margin-top:20px" class="badge-container badge-relative">
-        <img class='avatar small' src="https://picsum.photos/200/300" alt="pic">
-        <span class="badge bg-online badge-avatar-small"></span>
-    </div>
-
-    <div style="margin-top:20px" class="badge-container badge-relative">
-        <img class='avatar small' src="https://picsum.photos/200/300" alt="pic">
-        <span class="badge bg-offline badge-avatar-small"></span>
-    </div>
-
 </body>
 
 </html>
