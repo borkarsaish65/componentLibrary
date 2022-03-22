@@ -1,247 +1,581 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/8706ae3761.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="../../main.css">
-    <link rel="stylesheet" href="card.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../smartui.css">
+    <title>Card Component</title>
 </head>
+
 <body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="#">Smart UI</a>
+            </div>
+            <ul class="navbar-list-collection">
+                <li class="navbar-list-item"><a href="#">Home</a></li>
+                <li class="navbar-list-item"><a href="#">Profile</a></li>
+                <li class="navbar-list-item"><a href="#">Setting</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="web-page">
+        <div class="aside">
+            <div class="list-collection-container">
+
+                <ul class="list-collection list-style-none">
+                    <div class="list-heading">
+                        Get Started
+                    </div>
+                    <li class="list-item">
+                        <a href="../intro.html">Installation</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="list-collection-container">
+
+                <ul class="list-collection list-style-none">
+                    <div class="list-heading">
+                        Components
+                    </div>
+                    <li class="list-item"><a href="./alert/alert.html">Alert</a></li>
+                    <li class="list-item"><a href="../avatar-component/avatar.html">Avatar</a></li>
+                    <li class="list-item"><a href="../badge/badge.html">Badge</a></li>
+                    <li class="list-item"><a href="../button/button.html">Button</a></li>
+                    <li class="list-item active"><a href="../card-component/card.html">Card</a></li>
+                    <li class="list-item"><a href="../grid-component/grid.html">Grid</a></li>
+                    <li class="list-item"><a href="../input-component/input.html">Input</a></li>
+                    <li class="list-item"><a href="../navigation-component/navigation.html">Navigation</a></li>
+                    <li class="list-item"><a href="../responsive-image-component/image.html">Image</a></li>
+                    <li class="list-item"><a href="">Rating</a></li>
+                    <li class="list-item"><a href="../navigation-component/navigation.html">Navigation</a></li>
+                    <li class="list-item"><a href="../">Toast</a></li>
+                    <li class="list-item"><a href="../text-utilities/text-utilities.html">Typography</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <h4 class="h1">Cards</h4>
+            <p class="h5">Card component are container which holds relevant information in a single, easy to understand
+                way. They may contain images in them for more information.</p>
+
+            <h5 class="h5">
+                Default Card
+            </h5>
+
+            <div class="demo-container flex flex-all-center background-white">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-header">
+                            Card Title
+                        </div>
+                        <img class="card-img" src="https://picsum.photos/200/300" alt="">
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus quis magnam quia eaque. Delectus ex temporibus voluptate quisquam nulla.</p>
+                        </div>
+                        <div class="card-footer">
+                            This is a footer
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+
+            <h5 class="h5">
+                Code Example
+            </h5>
+
+            <div class="demo-container flex space-around">
+                <pre><code class="xml">
+        &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-content&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                Card Title
+            &lt;/div&gt;
+            &lt;img class=&quot;card-img&quot; src=&quot;https://picsum.photos/200/300&quot; alt=&quot;&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;p&gt;Lorem ipsum dolor.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-footer&quot;&gt;
+                This is a footer
+            &lt;/div&gt;
+        &lt;/div&gt;
+                &lt;/div&gt;
+
+                </code></pre>
+            </div>
+
+            <h5 class="h5">
+                Cards with badges
+            </h5>
+            <p class="h6">Cards can also be combined with badge to make them look more attractive and intuitive.</p>
+
+            <h6 class="h6">Card with Success Badge</h6 >
+
+            <div class="demo-container flex flex-all-center background-white">
     
-    <h4>Card with Badges</h4>
-
-    <h4>Card with Danger Badge</h4>
-
-    <div class="card">
-        <div class="card-badge-container danger">
-            <i class="fas fa-exclamation-circle"></i>
-            <span> Warning!</span>
-        </div>
-        <div class="card-content">
-
-            <img class="card-img" src="https://picsum.photos/200/300" alt="">
-            <div class="card-header">
-                Card Title
-            </div>
-            <div class="card-body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus quis magnam quia eaque. Delectus ex temporibus voluptate quisquam nulla.</p>
-            </div>
-            <div class="card-footer">
-                This is a footer
-            </div>
-        </div>
-    </div>
-    <h4>Card with Success Badge</h4>
-
-    <div class="card">
-        <div class="card-badge-container success">
-            <i class="far fa-gem"></i>
-            <span>Brand New !</span>
-        </div>
-        <div class="card-content">
-
-            <img class="card-img" src="https://picsum.photos/200/300" alt="">
-            <div class="card-header">
-                Card Title
-            </div>
-            <div class="card-body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus quis magnam quia eaque. Delectus ex temporibus voluptate quisquam nulla.</p>
-            </div>
-            <div class="card-footer">
-                This is a footer
-            </div>
-        </div>
-    </div>
-
-    <h4>Card with Primary Badge</h4>
-
-    <div class="card">
-        <div class="card-badge-container primary">
-            <i class="far fa-id-badge"></i>
-            <span>ID </span>
-        </div>
-        <div class="card-content">
-
-            <img class="card-img" src="https://picsum.photos/200/300" alt="">
-            <div class="card-header">
-                Card Title
-            </div>
-            <div class="card-body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus quis magnam quia eaque. Delectus ex temporibus voluptate quisquam nulla.</p>
-            </div>
-            <div class="card-footer">
-                This is a footer
-            </div>
-        </div>
-    </div>
-
-    <h4>Card with Dismiss</h4>
-    <i class="fa-solid fa-circle-xmark"></i>
-    <div class="card">
-        <svg class="card-dismiss" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
-          </svg>
-        <div class="card-content">
-            <div class="card-header">
-                Card Title
-            </div>
-            <img class="card-img" src="https://picsum.photos/200/300" alt="">
-            <div class="card-body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus quis magnam quia eaque. Delectus ex temporibus voluptate quisquam nulla.</p>
-            </div>
-            <div class="card-footer">
-                This is a footer
-            </div>
-        </div>
-    </div>
-
-
-    <h4>Card with Text Overlay</h4>
-
-    <div class="card">
-        <svg class="card-dismiss" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
-          </svg>
-        <div class="card-content">
-            <div class="card-header">
-                Card Title
-            </div>
-            <div class="card-img-container position-relative">
-
-                <img class="card-img" src="https://picsum.photos/200/300" alt="">
-                <div class="card-img-overlay">
-                    <h3>Card Pic</h3>
-                    <p>Info About the pic...</p>
-                </div>
-
-            </div>
-
-            <div class="card-body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus quis magnam quia eaque. Delectus ex temporibus voluptate quisquam nulla.</p>
-            </div>
-            <div class="card-footer">
-                This is a footer
-            </div>
-        </div>
-    </div>
-
-
-    <h4>Horizontal Card</h4>
-
-
-    <div class="card card-horizontal">
-        <div class="card-content relative">
-            <div class="card-container">
-                <div class="card-section-a">
-                    <img class="card-img" src="https://picsum.photos/200/300" alt="">
-                </div>
-                <div class="card-section-b position-relative">
-                    <svg class="card-dismiss horizontal" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
-                      </svg>
-                    <div class="card-header">
-                        Card Title
+                <div class="card">
+                    <div class="card-badge-container success">
+                        <i class="far fa-gem"></i>
+                        <span>Brand New !</span>
                     </div>
-                    <div class="card-body">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus quis magnam quia eaque. Delectus ex temporibus voluptate quisquam nulla.</p>
+                    <div class="card-content">
+            
+                        <img class="card-img" src="https://picsum.photos/200/300" alt="">
+                        <div class="card-header">
+                            Card Title
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus quis magnam quia eaque. Delectus ex temporibus voluptate quisquam nulla.</p>
+                        </div>
+                        <div class="card-footer">
+                            This is a footer
+                        </div>
                     </div>
-                    <div class="card-footer">
-                        This is a footer
+                </div>
+            </div>
+
+            <h5 class="h5">
+                Code Example
+            </h5>
+
+            <div class="demo-container flex space-around">
+                <pre><code class="xml">
+            &lt;div class="card"&gt;
+            &lt;div class="card-badge-container success"&gt;
+                &lt;i class="far fa-gem"&gt;&lt;/i&gt;
+                &lt;span&gt;Brand New !&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class="card-content"&gt;
+            
+                &lt;img class="card-img" src="https://picsum.photos/200/300" alt=""&gt;
+                &lt;div class="card-header"&gt;
+                    Card Title
+                &lt;/div&gt;
+                &lt;div class="card-body"&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Assumenda delectus quis magnam quia eaque. Delectus ex temporibus voluptate quisquam nulla.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="card-footer"&gt;
+                    This is a footer
+                &lt;/div&gt;
+            &lt;/div&gt;
+                &lt;/div&gt;
+                </code></pre>
+            </div>
+
+            <h6 class="h6">Card with Danger Badge</h6 >
+            <div class="demo-container flex flex-all-center background-white">
+
+                <div class="card">
+                    <div class="card-badge-container danger">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span> Warning!</span>
+                    </div>
+                    <div class="card-content">
+            
+                        <img class="card-img" src="https://picsum.photos/200/300" alt="">
+                        <div class="card-header">
+                            Card Title
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus quis magnam quia eaque. Delectus ex temporibus voluptate quisquam nulla.</p>
+                        </div>
+                        <div class="card-footer">
+                            This is a footer
+                        </div>
                     </div>
                 </div>
 
             </div>
 
-        </div>
-    </div>
+            <h5 class="h5">
+                Code Example
+            </h5>
 
-    <h4>Horizontal Card with Shadow</h4>
+            <div class="demo-container flex space-around">
+                <pre><code class="xml">
+                    &lt;div class="card"&gt;
+                    &lt;div class="card-badge-container danger"&gt;
+                        &lt;i class="fas fa-exclamation-circle"&gt;&lt;/i&gt;
+                        &lt;span&gt; Warning!&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class="card-content"&gt;
+            
+                        &lt;img class="card-img" src="https://picsum.photos/200/300" alt=""&gt;
+                        &lt;div class="card-header"&gt;
+                            Card Title
+                        &lt;/div&gt;
+                        &lt;div class="card-body"&gt;
+                            &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus quis magnam quia eaque.
+                             Delectus ex temporibus voluptate quisquam nulla.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card-footer"&gt;
+                            This is a footer
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
 
-
-    <div class="card card-horizontal card-shadow">
-        <div class="card-content relative">
-            <div class="card-container">
-                <div class="card-section-a">
-                    <img class="card-img" src="https://picsum.photos/200/300" alt="">
-                </div>
-                <div class="card-section-b position-relative">
-                    <svg class="card-dismiss horizontal" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
-                      </svg>
-                    <div class="card-header">
-                        Card Title
-                    </div>
-                    <div class="card-body">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus quis magnam quia eaque. Delectus ex temporibus voluptate quisquam nulla.</p>
-                    </div>
-                    <div class="card-footer">
-                        This is a footer
-                    </div>
-                </div>
-
+                </code></pre>
             </div>
 
+
+            <h6 class="h6">Card with Dismiss</h6>
+
+
+                <div class="demo-container flex flex-all-center background-white">
+    
+                    <div class="card">
+                        <i class="fas fa-times-circle card-dismiss"></i>
+                        <div class="card-content">
+                            <div class="card-header">
+                                Card Title
+                            </div>
+                            <img class="card-img" src="https://picsum.photos/200/300" alt="">
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus quis magnam quia eaque. Delectus ex temporibus voluptate quisquam nulla.</p>
+                            </div>
+                            <div class="card-footer">
+                                This is a footer
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <h5 class="h5">
+                    Code Example
+                </h5>
+    
+                <div class="demo-container flex space-around">
+                    <pre><code class="xml">
+                        &lt;div class="card"&gt;
+                        &lt;i class="fas fa-times-circle card-dismiss"&gt;&lt;/i&gt;
+                        &lt;div class="card-content"&gt;
+                            &lt;div class="card-header"&gt;
+                                Card Title
+                            &lt;/div&gt;
+                            &lt;img class="card-img" src="https://picsum.photos/200/300" alt=""&gt;
+                            &lt;div class="card-body"&gt;
+                                &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Assumenda delectus quis magnam quia eaque.
+                                 Delectus ex temporibus voluptate quisquam nulla.&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class="card-footer"&gt;
+                                This is a footer
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;                    </code></pre>
+                </div>
+    
+                <h6 class="h6">Card with Text Overlay</h6>
+
+                <p class="h6">
+                    Text can be superimposed on the image contained inside the card. This can be used to provide more information or for making the card more attractive.
+                </p>
+                <div class="demo-container flex flex-all-center background-white">
+    
+                    <div class="card">
+                        <i class="card-dismiss fas fa-times-circle"></i>
+                        <div class="card-content">
+                            <div class="card-header">
+                                Card Title
+                            </div>
+                            <div class="card-img-container position-relative">
+                
+                                <img class="card-img" src="https://picsum.photos/200/300" alt="">
+                                <div class="card-img-overlay">
+                                    <h3>Card Pic</h3>
+                                    <p>Info About the pic...</p>
+                                </div>
+                
+                            </div>
+                
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus quis magnam quia eaque. Delectus ex temporibus voluptate quisquam nulla.</p>
+                            </div>
+                            <div class="card-footer">
+                                This is a footer
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <h5 class="h5">
+                    Code Example
+                </h5>
+    
+                <div class="demo-container flex space-around">
+                    <pre><code class="xml">
+                        &lt;div class="card"&gt;
+                        &lt;i class="card-dismiss fas fa-times-circle"&gt;&lt;/i&gt;
+                        &lt;div class="card-content"&gt;
+                            &lt;div class="card-header"&gt;
+                                Card Title
+                            &lt;/div&gt;
+                            &lt;div class="card-img-container position-relative"&gt;
+                
+                                &lt;img class="card-img" src="https://picsum.photos/200/300" alt=""&gt;
+                                &lt;div class="card-img-overlay"&gt;
+                                    &lt;h3&gt;Card Pic&lt;/h3&gt;
+                                    &lt;p&gt;Info About the pic...&lt;/p&gt;
+                                &lt;/div&gt;
+                
+                            &lt;/div&gt;
+                
+                            &lt;div class="card-body"&gt;
+                                &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus quis magnam quia eaque.
+                                 Delectus ex temporibus voluptate quisquam nulla.&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class="card-footer"&gt;
+                                This is a footer
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    </code></pre>
+                </div>
+
+                <h6 class="h6">Horizontal Cards</h6>
+
+                <p class="h6">
+                    Cards can also be made to make them appear horizontal.
+                </p>
+                <div class="demo-container flex flex-all-center background-white">
+                    <div class="card card-horizontal">
+                        <div class="card-content relative">
+                            <div class="card-container">
+                                <div class="card-section-a">
+                                    <img class="card-img" src="https://picsum.photos/200/300" alt="">
+                                </div>
+                                <div class="card-section-b position-relative">
+                                    <svg class="card-dismiss horizontal" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                                      </svg>
+                                    <div class="card-header">
+                                        Card Title
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus quis magnam quia eaque. Delectus ex temporibus voluptate quisquam nulla.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        This is a footer
+                                    </div>
+                                </div>
+                
+                            </div>
+                
+                        </div>
+                    </div>
+
+    
+                </div>
+
+                <div class="demo-container flex space-around">
+                    <pre><code class="xml">
+                        &lt;div class="card card-horizontal"&gt;
+                        &lt;div class="card-content relative"&gt;
+                            &lt;div class="card-container"&gt;
+                                &lt;div class="card-section-a"&gt;
+                                    &lt;img class="card-img" src="https://picsum.photos/200/300" alt=""&gt;
+                                &lt;/div&gt;
+                                &lt;div class="card-section-b position-relative"&gt;
+                                    &lt;i class="fas fa-times-circle card-dismiss"&lt;/i&gt;
+                                    &lt;div class="card-header"&gt;
+                                        Card Title
+                                    &lt;/div&gt;
+                                    &lt;div class="card-body"&gt;
+                                        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus
+                                         quis magnam quia eaque. Delectus ex temporibus voluptate quisquam nulla.&lt;/p&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="card-footer"&gt;
+                                        This is a footer
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                
+                            &lt;/div&gt;
+                
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    </code></pre>
+                </div>
+
+                <h6 class="h6">Cards with shadow</h6>
+
+                <p class="h6">
+                    Shadow can be used to make cards more attractive.
+                </p>
+                <div class="demo-container flex flex-all-center background-white">
+                    <div class="card card-shadow">
+                        <div class="card-content">
+                            <div class="card-header">
+                                Card Title
+                            </div>
+                            <img class="card-img" src="https://picsum.photos/200/300" alt="">
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus quis magnam quia eaque. Delectus ex temporibus voluptate quisquam nulla.</p>
+                            </div>
+                            <div class="card-footer">
+                                This is a footer
+                            </div>
+                        </div>
+                    </div>
+
+    
+                </div>
+
+                <p class="h6">
+                    Cards with low shadow
+                </p>
+                <div class="demo-container flex flex-all-center background-white">
+                <div class="card card-horizontal card-shadow-low">
+                    <div class="card-content relative">
+                        <div class="card-container">
+                            <div class="card-section-a">
+                                <img class="card-img" src="https://picsum.photos/200/300" alt="">
+                            </div>
+                            <div class="card-section-b position-relative">
+                                <svg class="card-dismiss horizontal" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                                  </svg>
+                                <div class="card-header">
+                                    Card Title
+                                </div>
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus quis magnam quia eaque. Delectus ex temporibus voluptate quisquam nulla.</p>
+                                </div>
+                                <div class="card-footer">
+                                    This is a footer
+                                </div>
+                            </div>
+            
+                        </div>
+            
+                    </div>
+                </div>
         </div>
-    </div>
 
-    <h4>Horizontal Card with Low Shadow</h4>
-
-
-    <div class="card card-horizontal card-shadow-low">
-        <div class="card-content relative">
-            <div class="card-container">
-                <div class="card-section-a">
-                    <img class="card-img" src="https://picsum.photos/200/300" alt="">
+        <p class="h6">
+            Cards with Large shadow
+        </p>
+        <div class="demo-container flex flex-all-center background-white">
+        <div class="card card-horizontal card-shadow-large">
+            <div class="card-content relative">
+                <div class="card-container">
+                    <div class="card-section-a">
+                        <img class="card-img" src="https://picsum.photos/200/300" alt="">
+                    </div>
+                    <div class="card-section-b position-relative">
+                        <svg class="card-dismiss horizontal" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                          </svg>
+                        <div class="card-header">
+                            Card Title
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus quis magnam quia eaque. Delectus ex temporibus voluptate quisquam nulla.</p>
+                        </div>
+                        <div class="card-footer">
+                            This is a footer
+                        </div>
+                    </div>
+    
                 </div>
-                <div class="card-section-b position-relative">
-                    <svg class="card-dismiss horizontal" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
-                      </svg>
-                    <div class="card-header">
-                        Card Title
-                    </div>
-                    <div class="card-body">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus quis magnam quia eaque. Delectus ex temporibus voluptate quisquam nulla.</p>
-                    </div>
-                    <div class="card-footer">
-                        This is a footer
-                    </div>
-                </div>
-
+    
             </div>
+        </div>
+</div>
+
+<h6 class="h6">Code Example</h6>
+
+<div class="demo-container flex space-around">
+    <pre><code class="xml">
+
+        <p>Card with default shadow</p>
+
+        &lt;div class="card card-shadow"&gt;
+            &lt;div class="card-content"&gt;
+                &lt;div class="card-header"&gt;
+                    Card Title
+                &lt;/div&gt;
+                &lt;img class="card-img" src="https://picsum.photos/200/300" alt=""&gt;
+                &lt;div class="card-body"&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Assumenda delectus quis magnam quia eaque.
+                     Delectus ex temporibus voluptate quisquam nulla.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="card-footer"&gt;
+                    This is a footer
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        <p>Card with low shadow</p>
+
+        &lt;div class="card card-horizontal card-shadow-low"&gt;
+            &lt;div class="card-content relative"&gt;
+                &lt;div class="card-container"&gt;
+                    &lt;div class="card-section-a"&gt;
+                        &lt;img class="card-img" src="https://picsum.photos/200/300" alt=""&gt;
+                    &lt;/div&gt;
+                    &lt;div class="card-section-b position-relative"&gt;
+                        &lt;i class="fas fa-times-circle card-dismiss"&gt;&lt;/i&gt;
+                        &lt;div class="card-header"&gt;
+                            Card Title
+                        &lt;/div&gt;
+                        &lt;div class="card-body"&gt;
+                            &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Assumenda delectus quis magnam quia eaque. 
+                             Delectus ex temporibus voluptate quisquam nulla.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card-footer"&gt;
+                            This is a footer
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+    
+                &lt;/div&gt;
+    
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        <p>Card with large shadow</p>
+
+        &lt;div class="card card-horizontal card-shadow-large"&gt;
+            &lt;div class="card-content relative"&gt;
+                &lt;div class="card-container"&gt;
+                    &lt;div class="card-section-a"&gt;
+                        &lt;img class="card-img" src="https://picsum.photos/200/300" alt=""&gt;
+                    &lt;/div&gt;
+                    &lt;div class="card-section-b position-relative"&gt;
+                        &lt;i class="fas fa-times-circle card-dismiss"&gt;&lt;/i&gt;
+                        &lt;div class="card-header"&gt;
+                            Card Title
+                        &lt;/div&gt;
+                        &lt;div class="card-body"&gt;
+                            &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Assumenda delectus quis magnam quia eaque.
+                              Delectus ex temporibus voluptate quisquam nulla.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card-footer"&gt;
+                            This is a footer
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+    
+                &lt;/div&gt;
+    
+            &lt;/div&gt;
+        &lt;/div&gt;
+    </code></pre>
+</div>
+
 
         </div>
-    </div>
 
-    <h4>Horizontal Card with Large Shadow</h4>
-
-
-    <div class="card card-horizontal card-shadow-large">
-        <div class="card-content relative">
-            <div class="card-container">
-                <div class="card-section-a">
-                    <img class="card-img" src="https://picsum.photos/200/300" alt="">
-                </div>
-                <div class="card-section-b position-relative">
-                    <svg class="card-dismiss horizontal" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
-                      </svg>
-                    <div class="card-header">
-                        Card Title
-                    </div>
-                    <div class="card-body">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus quis magnam quia eaque. Delectus ex temporibus voluptate quisquam nulla.</p>
-                    </div>
-                    <div class="card-footer">
-                        This is a footer
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
 </body>
+
 </html>

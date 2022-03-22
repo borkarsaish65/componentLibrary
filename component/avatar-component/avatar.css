@@ -30,14 +30,3 @@
     height: 128px;
     width: 128px;
 }
-
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.container .row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}

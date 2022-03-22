@@ -16,6 +16,7 @@
     height: 1.7rem;
     font-size: 1rem;
     padding: 5px 7px;
+    margin:5px 0;
 }
 
 .formDiv .input:focus {

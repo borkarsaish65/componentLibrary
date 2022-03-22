@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,55 +7,205 @@
     <script src="https://kit.fontawesome.com/8706ae3761.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../main.css">
     <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="../../smartui.css">
     <title>Document</title>
 </head>
-<body>  
-    <div class="container">
-        <h4>Default Input Field</h4>
-        <p>This field will take up the entire available size horizontally.</p>
-        <div class="formDiv">
-                <label for="Name">Enter Name</label>
-                <input class="input" type="text">
-        </div>
-        <h4>Input Field with only bottom border</h4>
-        <div class="formDiv">
-                <label for="Name">Last Name</label>
-                <input class="input bottom-border" type="text">
-        </div>
-        <h4>Input Field with Error </h4>
-        <p>This field will take up the entire available size horizontally.</p>
-        <div class="formDiv">
-                <label for="Name">Enter Email</label>
-                <input class="input error" type="text">
-        </div>
-        <h4>Input Field with bottom border with Error</h4>
-        <div class="formDiv">
-                <label for="Name">Last Name</label>
-                <input class="input bottom-border error" type="text">
-        </div>
 
+<body>
 
-        <h4>Sample Form with error tooltip</h4>
-        <p>This field will take up the entire available size horizontally.</p>
-        <div class="formDiv">
-            <div class="flex">
-                <div class="section position-relative">
-                    <label for="Name">First Name</label>
-                    <input class="input bottom-border error" type="text">
-                    <div class="invalid-msg">
-                        Please enter name.
+    <div class="header">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="#">Smart UI</a>
+            </div>
+            <ul class="navbar-list-collection">
+                <li class="navbar-list-item"><a href="#">Home</a></li>
+                <li class="navbar-list-item"><a href="#">Profile</a></li>
+                <li class="navbar-list-item"><a href="#">Setting</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="web-page">
+        <div class="aside">
+            <div class="list-collection-container">
+
+                <ul class="list-collection list-style-none">
+                    <div class="list-heading">
+                        Get Started
                     </div>
+                    <li class="list-item">
+                        <a href="../intro.html">Installation</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="list-collection-container">
+
+                <ul class="list-collection list-style-none">
+                    <div class="list-heading">
+                        Components
+                    </div>
+                    <li class="list-item"><a href="./alert/alert.html">Alert</a></li>
+                    <li class="list-item"><a href="../avatar-component/avatar.html">Avatar</a></li>
+                    <li class="list-item"><a href="../badge/badge.html">Badge</a></li>
+                    <li class="list-item"><a href="../button/button.html">Button</a></li>
+                    <li class="list-item"><a href="../card-component/card.html">Card</a></li>
+                    <li class="list-item"><a href="../grid-component/grid.html">Grid</a></li>
+                    <li class="list-item active"><a href="../input-component/input.html">Input</a></li>
+                    <li class="list-item"><a href="../navigation-component/navigation.html">Navigation</a></li>
+                    <li class="list-item"><a href="../responsive-image-component/image.html">Image</a></li>
+                    <li class="list-item"><a href="">Rating</a></li>
+                    <li class="list-item"><a href="../navigation-component/navigation.html">Navigation</a></li>
+                    <li class="list-item"><a href="../">Toast</a></li>
+                    <li class="list-item"><a href="../text-utilities/text-utilities.html">Typography</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+
+            <h6 class="h6">Default Input Field</h6>
+            <p class="h6">This field will take up the entire available size horizontally.</p>
+            <div class="demo-container background-white">
+                <div class="formDiv">
+                    <label for="Name">Enter Name</label>
+                    <input class="input" type="text">
                 </div>
-                <div class="section position-relative">
-                    <label for="Name">Age</label>
-                    <input class="input bottom-border error" type="text"> 
-                    <div class="invalid-msg">
-                        Please enter age.
+            </div>
+
+            <h5 class="h5">
+                Code Example
+            </h5>
+
+            <div class="demo-container flex space-around">
+                <pre><code class="xml">
+    &lt;div class=&quot;formDiv&quot;&gt;
+    &lt;label for=&quot;Name&quot;&gt;Enter Name&lt;/label&gt;
+    &lt;input class=&quot;input&quot; type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+
+                </code></pre>
+            </div>
+            
+            <h6 class="h6">Input Field with only bottom border</h6>
+            <p class="h6">In this type of input field only the bottom border will be visible</p>
+            <div class="demo-container background-white">
+                <div class="formDiv">
+                    <label for="Name">Last Name</label>
+                    <input class="input bottom-border" type="text">
+                </div>
+            </div>
+
+            <h5 class="h5">
+                Code Example
+            </h5>
+
+            <div class="demo-container flex space-around">
+                <pre><code class="xml">
+          &lt;div class=&quot;formDiv&quot;&gt;
+          &lt;label for=&quot;Name&quot;&gt;Enter Name&lt;/label&gt;
+          &lt;input class=&quot;input bottom-border&quot; type=&quot;text&quot;&gt;
+          &lt;/div&gt;
+                </code></pre>
+            </div>
+
+            <h6 class="h6">Input Field with Error</h6>
+            <p class="h6">Error in the input can be notified to user using the class "error".</p>
+            <div class="demo-container background-white">
+                <div class="formDiv">
+                    <label for="Name">Enter Email</label>
+                    <input class="input error" type="text">
+                </div>
+            </div>
+
+            <h5 class="h5">
+                Code Example
+            </h5>
+
+            <div class="demo-container flex space-around">
+                <pre><code class="xml">
+          &lt;div class=&quot;formDiv&quot;&gt;
+          &lt;label for=&quot;Name&quot;&gt;Enter Name&lt;/label&gt;
+          &lt;input class=&quot;input error&quot; type=&quot;text&quot;&gt;
+          &lt;/div&gt;
+                </code></pre>
+            </div>
+
+            <h6 class="h6">Input field with bottom border with Error</h6>
+            <p class="h6">"error" class is also compatible bottom border input fields.</p>
+            <div class="demo-container background-white">
+                <div class="formDiv">
+                    <label for="Name">Last Name</label>
+                    <input class="input bottom-border error" type="text">
+                </div>
+            </div>
+
+
+            <h5 class="h5">
+                Code Example
+            </h5>
+
+            <div class="demo-container flex space-around">
+                <pre><code class="xml">
+          &lt;div class=&quot;formDiv&quot;&gt;
+          &lt;label for=&quot;Name&quot;&gt;Enter Name&lt;/label&gt;
+          &lt;input class=&quot;input bottom-border error&quot; type=&quot;text&quot;&gt;
+          &lt;/div&gt;
+                </code></pre>
+            </div>
+
+            <h6 class="h6">Sample Form with error tooltip</h6>
+            <p class="h6">Tooltip can be used to display the error message for the user input.</p>
+            <div class="demo-container background-white overflow-y-unset">
+                <div class="formDiv">
+                    <div class="flex">
+                        <div class="section position-relative">
+                            <label for="Name">First Name</label>
+                            <input class="input bottom-border error" type="text">
+                            <div class="invalid-msg">
+                                Please enter name.
+                            </div>
+                        </div>
+                        <div class="section position-relative">
+                            <label for="Name">Age</label>
+                            <input class="input bottom-border error" type="text">
+                            <div class="invalid-msg">
+                                Please enter age.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <h5 class="h5">
+                Code Example
+            </h5>
+
+            <div class="demo-container flex space-around">
+                <pre><code class="xml">
+                &lt;div class=&quot;formDiv&quot;&gt;
+                &lt;div class=&quot;flex&quot;&gt;
+                    &lt;div class=&quot;section position-relative&quot;&gt;
+                        &lt;label for=&quot;Name&quot;&gt;First Name&lt;/label&gt;
+            &lt;input class=&quot;input bottom-border error&quot; type=&quot;text&quot;&gt;
+                        &lt;div class=&quot;invalid-msg&quot;&gt;
+                            Please enter name.
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;section position-relative&quot;&gt;
+                        &lt;label for=&quot;Name&quot;&gt;Age&lt;/label&gt;
+            &lt;input class=&quot;input bottom-border error&quot; type=&quot;text&quot;&gt;
+                        &lt;div class=&quot;invalid-msg&quot;&gt;
+                            Please enter age.
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                </code></pre>
+            </div>
+
+
         </div>
-        
-    </div>
+
+
 </body>
+
 </html>

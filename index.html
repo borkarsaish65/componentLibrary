@@ -4,23 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="smartui.css">
     <title>Document</title>
 </head>
-
 <body>
-    <button class='btn'>Click</button>
-    <button class='btn btn-default'>Click</button>
-    <button class='btn btn-default'>Click</button>
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a href="#">Smart UI</a>
+    </div>
+    <ul class="navbar-list-collection">
+        <li class="navbar-list-item"><a href="#">Home</a></li>
+        <li class="navbar-list-item"><a href="#">Profile</a></li>
+        <li class="navbar-list-item"><a href="#">Setting</a></li>
+    </ul>
+</nav>
 
-    <button class='btn btn-link'>Click</button>
+<div class="container">
+  <div class="hero-img mg-zero-auto">
+    <img class='img-responsive' src="./assets/images/main-img.png" alt="">
+  </div>
+  <div class="heading flex space-around">
+    <h1 class="h1">Smart UI</h1>
+  </div>
 
-
-    <button class='btn btn-FAB'>Click</button>
-    <!-- <button class='btn btn-default'>Click</button>
-
-  -->
+  <h4 class="h4 text-center">A modern UI library to make building and scaling application faster and easier.</h4>
+  <div class="flex space-evenly">
+      <button class="btn btn-primary">
+        <a href="./component/intro.html">
+          Get Started
+        </a>
+      </button>
+      <button class="btn btn-secondary">
+        <i class="fab fa-github"></i>
+        Github
+      </button>
+  </div>
+</div>
 </body>
-
 </html>

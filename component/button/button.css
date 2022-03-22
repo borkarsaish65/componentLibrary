@@ -1,5 +1,6 @@
 :root {
-    --box-shadow-color:rgba(0,0,0,0.75)
+    --box-shadow-color:rgba(0,0,0,0.75);
+    --success-color:#13af4e;
 }
 .btn {
     display: inline-block;
@@ -14,21 +15,24 @@
     height: 2.25rem;
 }
 
-.btn-primary {
+.btn.btn-primary {
     background-color: var(--primary-color);
     color:white;
 }
-.btn-secondary {
+.btn.btn-secondary {
     background-color: var(--secondary-color);
     color:white;  
 }
-.btn-link {
+.btn.btn-success {
+    background-color: var(--success-color);
+    color:white;  
+}
+.btn.btn-link {
     color:var(--primary-color);
-    background: white;
     text-decoration: underline;
 }
 
-.btn-floating {
+.btn.btn-floating {
     font-size: 3.125rem;
     padding: 12px;
     cursor: pointer;
@@ -43,22 +47,27 @@
     -moz-box-shadow: 3px 4px 10px -2px var(--box-shadow-color);
 }
 
-.btn-floating i {
+.btn.btn-floating i {
     font-size: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.btn-large {
+.btn.btn-large {
     font-size: 4.25rem;
 
 }
 
-.btn-outline-primary {
+.btn.btn-outline-primary {
     color:var(--primary-color);
     background-color: var(--white);
     border-color: #0d6efd;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
 }
 
 .row {

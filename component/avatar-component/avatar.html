@@ -3,39 +3,155 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="avatar.css">
-    <title>Document</title>
-</head>
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="../../smartui.css">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/default.min.css">
+      <title>Avatar Component</title>
+    </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <p>default avatar</p>
-            <img class='avatar' src="https://picsum.photos/200/300" alt="pic">
+    <div class="header">
+        <nav class="navbar">
+            <div class="navbar-brand">
+              <a href="#">Smart UI</a>
+            </div>
+            <ul class="navbar-list-collection">
+                <li class="navbar-list-item"><a href="#">Home</a></li>
+                <li class="navbar-list-item"><a href="#">Profile</a></li>
+                <li class="navbar-list-item"><a href="#">Setting</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="web-page">
+        <div class="aside">
+            <div class="list-collection-container">
+    
+                <ul class="list-collection list-style-none">
+                    <div class="list-heading">
+                       Get Started
+                    </div>
+                    <li class="list-item">
+                        <a href="../intro.html">Installation</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="list-collection-container">
+    
+                <ul class="list-collection list-style-none">
+                    <div class="list-heading">
+                       Components
+                    </div>
+                    <li class="list-item"><a href="../alert/alert.html">Alert</a></li>
+                    <li class="list-item active"><a href="../avatar-component/avatar.html">Avatar</a></li>
+                    <li class="list-item"><a href="../badge/badge.html">Badge</a></li>
+                    <li class="list-item"><a href="../button/button.html">Button</a></li>
+                    <li class="list-item"><a href="../card-component/card.html">Card</a></li>
+                    <li class="list-item"><a href="../grid-component/grid.html">Grid</a></li>
+                    <li class="list-item"><a href="../input-component/input.html">Input</a></li>
+                    <li class="list-item"><a href="../navigation-component/navigation.html">Navigation</a></li>
+                    <li class="list-item"><a href="../responsive-image-component/image.html">Image</a></li>
+                    <li class="list-item"><a href="">Rating</a></li>
+                    <li class="list-item"><a href="../navigation-component/navigation.html">Navigation</a></li>
+                    <li class="list-item"><a href="../">Toast</a></li>
+                    <li class="list-item"><a href="../text-utilities/text-utilities.html">Typography</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="row">
-            <p>default avatar with circle class</p>
-            <img class='avatar circle' src="https://picsum.photos/200/300" alt="pic">
-        </div>
-        <div class="row">
-            <p>Exxtra small avatar</p>
-            <img class='avatar xxsmall' src="https://picsum.photos/200/300" alt="pic">
-        </div>
-        <div class="row">
-            <p>Small Avatar</p>
-            <img class='avatar small' src="https://picsum.photos/200/300" alt="pic">
-        </div>
-        <div class="row">
-            <p>Large Avatar</p>
-            <img class='avatar large' src="https://picsum.photos/200/300" alt="pic">
-        </div>
-        <div class="row">
-            <p>Exxtra large avatar</p>
-            <img class='avatar xxlarge' src="https://picsum.photos/200/300" alt="pic">
-        </div>
-        <div class="row">
-            <p>Exxtra large avatar with circle</p>
-            <img class='avatar xxlarge circle' src="https://picsum.photos/200/300" alt="pic">
+        <div class="content">
+            <h4 class="h4">Avatar</h4>
+            <p>Avatar component used to display profile picture of user.</p>
+            <h5 class="h5">Default Avatar</h5>
+            <div class="demo-container flex space-around">
+                    <img class='avatar' src="./avatar.jpg" alt="pic">
+
+            </div>
+            <h5 class="h5">Code Example</h5>
+            <div class="demo-container flex space-around p1">
+                <pre><code class="xml">
+                    &lt;img class=&#39;avatar&#39; src=&quot;./avatar.jpg&quot; alt=&quot;pic&quot;&gt;
+     
+                </code></pre>
+            </div>
+            <h5 class="h5">Circular Avatar</h5>
+            <div class="demo-container flex space-around">
+                <img class='avatar circle' src="./avatar.jpg" alt="pic">
+                
+            </div>
+            <h5 class="h5">Code Example</h5>
+            <div class="demo-container flex space-around p1">
+                <pre><code class="xml">
+                    &lt;img class=&#39;avatar circle&#39; src=&quot;./avatar.jpg&quot; alt=&quot;pic&quot;&gt;
+                
+                </code></pre>
+            </div>
+            <h5 class="h5">Extra Small Avatar</h5>
+            <p>You can control the size of avatar using other avatar classes.</p>
+            <p>Below is the extra small avatar which can be achieved using the class 'xxsmall' along with the default avatar class.</p>
+            <p></p>
+            <div class="demo-container flex space-around">
+                <img class='avatar xxsmall' src="./avatar.jpg" alt="pic">
+               
+            </div>
+            <h5 class="h5">Code Example</h5>
+            <div class="demo-container flex space-around p1">
+                &lt;img class=&#39;avatar xxsmall&#39; src=&quot;./avatar.jpg&quot; alt=&quot;pic&quot;&gt;
+               
+                </code></pre>
+            </div>
+            <h5 class="h5"> Small Avatar</h5>
+            <p>Below is small avatar, which can be achieved using "small" class.</p>
+            <p></p>
+            <div class="demo-container flex space-around">
+                <img class='avatar small' src="./avatar.jpg" alt="pic">
+            </div>
+            <h5 class="h5">Code Example</h5>
+            <div class="demo-container flex space-around p1">
+                &lt;img class=&#39;avatar small&#39; src=&quot;./avatar.jpg&quot; alt=&quot;pic&quot;&gt;
+               
+                </code></pre>
+            </div>
+            <h5 class="h5">Large Avatar</h5>
+            <p>Below is large avatar, which can be achieved using "large" class.</p>
+            <p></p>
+            <div class="demo-container flex space-around">
+                <img class='avatar large' src="./avatar.jpg" alt="pic">
+            </div>
+            <h5 class="h5">Code Example</h5>
+            <div class="demo-container flex space-around p1">
+                &lt;img class=&#39;avatar large&#39; src=&quot;./avatar.jpg&quot; alt=&quot;pic&quot;&gt;
+               
+                </code></pre>
+            </div>
+            <h5 class="h5">Extra large Avatar</h5>
+            <p>Below is Extra large avatar, which can be achieved using "xxlarge" class.</p>
+            <p></p>
+            <div class="demo-container flex space-around">
+                <img class='avatar xxlarge' src="./avatar.jpg" alt="pic">
+            </div>
+            <h5 class="h5">Code Example</h5>
+            <div class="demo-container flex space-around p1">
+                &lt;img class=&#39;avatar xxlarge&#39; src=&quot;./avatar.jpg&quot; alt=&quot;pic&quot;&gt;
+               
+                </code></pre>
+            </div>
+            <h5 class="h5">Combination Avatar</h5>
+            <p>You can combine above avatar classes to get desired avatar. </p>
+            <p>Below is an example of using circle and xxlarge classes together on a img tag.</p>            
+            <p></p>
+            <div class="demo-container flex space-around">
+                <img class='avatar xxlarge circle' src="./avatar.jpg" alt="pic">
+            </div>
+            <h5 class="h5">Code Example</h5>
+            <div class="demo-container flex space-around p1">
+                &lt;img class=&#39;avatar xxlarge circle&#39; src=&quot;./avatar.jpg&quot; alt=&quot;pic&quot;&gt;
+                </code></pre>
+            </div>
         </div>
     </div>
+</body>
+</html>
+
 </body>
 </html>

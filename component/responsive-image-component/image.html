@@ -5,21 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="../../main.css">
-    <link rel="stylesheet" href="image.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../smartui.css">
+    <title>Image Component</title>
 </head>
 <body>
 
-    <div class="container">
-        <h4>Responsive Image</h4>
-        <img class="img-responsive  mg-zero-auto display-block" src="https://picsum.photos/300/500" alt="">
 
+    <div class="header">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="#">Smart UI</a>
+            </div>
+            <ul class="navbar-list-collection">
+                <li class="navbar-list-item"><a href="#">Home</a></li>
+                <li class="navbar-list-item"><a href="#">Profile</a></li>
+                <li class="navbar-list-item"><a href="#">Setting</a></li>
+            </ul>
+        </nav>
     </div>
-    <div class="container">
-        <h4>Rounded Responsive image</h4>
-        <p class="text-center">Rounded image need to have same height and width to give perfect circular image.</p>
-        <img class="img-responsive img-rounded mg-zero-auto display-block" src="https://picsum.photos/200/200" alt="">
-    </div>
+    <div class="web-page">
+        <div class="aside">
+            <div class="list-collection-container">
+
+                <ul class="list-collection list-style-none">
+                    <div class="list-heading">
+                        Get Started
+                    </div>
+                    <li class="list-item">
+                        <a href="../intro.html">Installation</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="list-collection-container">
+
+                <ul class="list-collection list-style-none">
+                    <div class="list-heading">
+                        Components
+                    </div>
+                    <li class="list-item"><a href="./alert/alert.html">Alert</a></li>
+                    <li class="list-item"><a href="../avatar-component/avatar.html">Avatar</a></li>
+                    <li class="list-item"><a href="../badge/badge.html">Badge</a></li>
+                    <li class="list-item"><a href="../button/button.html">Button</a></li>
+                    <li class="list-item"><a href="../card-component/card.html">Card</a></li>
+                    <li class="list-item"><a href="../grid-component/grid.html">Grid</a></li>
+                    <li class="list-item"><a href="../input-component/input.html">Input</a></li>
+                    <li class="list-item"><a href="../navigation-component/navigation.html">Navigation</a></li>
+                    <li class="list-item active"><a href="../responsive-image-component/image.html">Image</a></li>
+                    <li class="list-item"><a href="">Rating</a></li>
+                    <li class="list-item"><a href="../navigation-component/navigation.html">Navigation</a></li>
+                    <li class="list-item"><a href="../">Toast</a></li>
+                    <li class="list-item"><a href="../text-utilities/text-utilities.html">Typography</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+
+                <h6 class="h6">Responsive Image</h6>
+                <p class="h6">This field will take up the entire available size horizontally.</p>
+                <img class="img-responsive  mg-zero-auto display-block" src="https://picsum.photos/300/500" alt="">
+        
+                <h5 class="h5">
+                    Code Example
+                </h5>
+    
+                <div class="demo-container flex space-around">
+                    <pre><code class="xml">
+                        &lt;img class="img-responsive  mg-zero-auto display-block" src="https://picsum.photos/300/500" alt=""&gt;
+                    </code></pre>
+                </div>
+
+                <h6 class="h6">Responsive Round Image</h6>
+                <p class="h6">This field will take up the entire available size horizontally.</p>
+                <p class="h6">Rounded image need to have same height and width to give perfect circular image.</p>
+                <img class="img-responsive img-rounded mg-zero-auto display-block" src="https://picsum.photos/200/200" alt="">
+
+                <h5 class="h5">
+                    Code Example
+                </h5>
+    
+                <div class="demo-container flex space-around">
+                    <pre><code class="xml">
+                        &lt;img class="img-responsive  mg-zero-auto display-block" src="https://picsum.photos/300/500" alt=""&gt;
+                    </code></pre>
+                </div>
+
+
+        </div>
+
+
+
 
 
 </body>
