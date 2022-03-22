@@ -1,3 +1,8 @@
+:root {
+    --rating-on-hover:#deb217;
+    --rating-on-checked:#ffc700;
+    --rating-after-checked:gold;
+}
 .rating-container {
     display: flex;
     justify-content: center;
@@ -18,16 +23,16 @@
 }
 
 .rating-div > input:checked ~ label {
-    color: #ffc700;    
+    color: var(--rating-on-checked);    
 }
 .rating-div:not(:checked) > label:hover,
 .rating-div:not(:checked) > label:hover ~ label {
-    color: #deb217;  
+    color: var(--rating-on-hover);  
 }
 .rating-div > input:checked + label:hover,
 .rating-div > input:checked + label:hover ~ label,
 .rating-div > input:checked ~ label:hover,
 .rating-div > input:checked ~ label:hover ~ label,
 .rating-div > label:hover ~ input:checked ~ label {
-    color: gold;
+    color: var(--rating-after-checked);
 }
