@@ -31,5 +31,3 @@
 .rating-div > label:hover ~ input:checked ~ label {
     color: gold;
 }
-
-/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
