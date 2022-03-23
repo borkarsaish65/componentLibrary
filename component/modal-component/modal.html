@@ -6,43 +6,194 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="../../main.css">
     <link rel="stylesheet" href="modal.css">
-    <link rel="stylesheet" href="../button/button.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../smartui.css">
+    <title>Modal Component</title>
 </head>
 <body>
-    <div class="modal-wrapper">
-        <div class="modal">
-            <div class="modal-heading">
-                <h2 class="text-center">
-                    You have opened a smart ui modal.
-                </h2>
-                <button onclick="closeModal(event)" class="modal-close">
-                    X
-                </button>
+
+    <div class="header">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="#">Smart UI</a>
             </div>
-            <div class="modal-content">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident nisi tenetur corrupti! Cumque voluptatem animi pariatur, culpa assumenda natus ipsam dolor quisquam harum fugit cu?</p>
+            <ul class="navbar-list-collection">
+                <li class="navbar-list-item"><a href="#">Home</a></li>
+                <li class="navbar-list-item"><a href="#">Profile</a></li>
+                <li class="navbar-list-item"><a href="#">Setting</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="web-page">
+        <div class="aside">
+            <div class="list-collection-container">
+
+                <ul class="list-collection list-style-none">
+                    <div class="list-heading">
+                        Get Started
+                    </div>
+                    <li class="list-item">
+                        <a href="../intro.html">Installation</a>
+                    </li>
+                </ul>
             </div>
-            <div class="modal-cta">
-                <button class="btn btn-primary">
-                    Yes
-                </button>
-                <button class="btn btn-danger">
-                    No
-                </button>
+            <div class="list-collection-container">
+
+                <ul class="list-collection list-style-none">
+                    <div class="list-heading">
+                        Components
+                    </div>
+                    <li class="list-item"><a href="../alert/alert.html">Alert</a></li>
+                    <li class="list-item"><a href="../avatar-component/avatar.html">Avatar</a></li>
+                    <li class="list-item"><a href="../badge/badge.html">Badge</a></li>
+                    <li class="list-item"><a href="../button/button.html">Button</a></li>
+                    <li class="list-item"><a href="../card-component/card.html">Card</a></li>
+                    <li class="list-item"><a href="../grid-component/grid.html">Grid</a></li>
+                    <li class="list-item"><a href="../input-component/input.html">Input</a></li>
+                    <li class="list-item active"><a href="../modal-component/modal.html">Modal</a></li>
+                    <li class="list-item"><a href="../navigation-component/navigation.html">Navigation</a></li>
+                    <li class="list-item"><a href="../responsive-image-component/image.html">Image</a></li>
+                    <li class="list-item"><a href="../rating-component/rating.html">Rating</a></li>
+                    <li class="list-item"><a href="../toast-component/toast.html">Toast</a></li>
+                    <li class="list-item"><a href="../text-utilities/text-utilities.html">Typography</a></li>
+                </ul>
             </div>
         </div>
-    </div>
+        <div class="content">
 
-    <button onclick="openModal()">Open Modal</button>
+
+            <div id='modal-1' class="modal-wrapper">
+                <div class="modal">
+                    <div class="modal-heading">
+                        <h2 class="text-center">
+                            You have opened a smart ui modal.
+                        </h2>
+                        <button onclick="closeModal(event)" class="modal-close">
+                            X
+                        </button>
+                    </div>
+                    <div class="modal-content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident nisi tenetur corrupti! Cumque voluptatem animi pariatur, culpa assumenda natus ipsam dolor quisquam harum fugit cu?</p>
+                    </div>
+                    <div class="modal-cta">
+                        <button class="btn btn-primary">
+                            Yes
+                        </button>
+                        <button class="btn btn-danger">
+                            No
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <h6 class="h6">Modal</h6>
+            <p class="h6">A modal is a dialog box or popup window that is displayed on the screen.</p>
+            <div class="demo-container background-white flex flex-all-center">
+                <button  data-target="#modal-1" class="btn btn-primary" onclick="openModal(event)">Open Modal</button>
+            </div>
+
+            <h5 class="h5">
+                Basic Modal UI
+            </h5>
+            <p class="h6">The default smart ui modal will look like the following.</p>
+            <div class="demo-container flex space-around">
+
+                        <div class="modal modal-demo">
+                            <div class="modal-heading">
+                                <h2 class="text-center">
+                                    You have opened a smart ui modal.
+                                </h2>
+                                <button onclick="closeModal(event)" class="modal-close">
+                                    X
+                                </button>
+                            </div>
+                            <div class="modal-content">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident nisi tenetur corrupti! Cumque voluptatem animi pariatur, culpa assumenda natus ipsam dolor quisquam harum fugit cu?</p>
+                            </div>
+                            <div class="modal-cta">
+                                <button class="btn btn-primary">
+                                    Yes
+                                </button>
+                                <button class="btn btn-danger">
+                                    No
+                                </button>
+                            </div>
+                        </div>
+
+
+            </div>
+
+            <h5 class="h5">
+                Code Example
+            </h5>
+            <p class="h6">Below is the basic skeleton html code for the modal.</p>
+            
+            <div class="demo-container flex space-around">
+                <pre><code class="xml">
+                    &lt;div id='modal-1' class="modal-wrapper"&gt;
+                    &lt;div class="modal"&gt;
+                        &lt;div class="modal-heading"&gt;
+                            &lt;h2 class="text-center"&gt;
+                                You have opened a smart ui modal.
+                            &lt;/h2&gt;
+                            &lt;button onclick="closeModal(event)" class="modal-close"&gt;
+                                X
+                            &lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;div class="modal-content"&gt;
+                            &lt;p&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                             Provident nisi tenetur corrupti! Cumque voluptatem animi pariatur,
+                              culpa assumenda natus ipsam dolor quisquam harum fugit cu?&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class="modal-cta"&gt;
+                            &lt;button class="btn btn-primary"&gt;
+                                Yes
+                            &lt;/button&gt;
+                            &lt;button class="btn btn-danger"&gt;
+                                No
+                            &lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                </code></pre>
+            </div>
+
+
+            <h5 class="h5">
+                Javascript Code Example
+            </h5>
+            <p class="h6">Below is the javascript code used to display the modal. The modal-wrapper can be toggled with 'show' class to view and hide the modal.</p>
+            
+            <div class="demo-container flex space-around">
+                <pre><code class="javascript">
+                    function openModal(event){
+                        let target = event.target;
+                        let id = target.getAttribute('data-target');
+                        let modal = document.querySelector(id);
+                        modal.classList.add('show');
+                    }  
+                    function closeModal(e){
+                        let parentElement = e.target.parentElement.parentElement.parentElement;
+                        parentElement.classList.remove('show');
+                    }
+                </code></pre>
+            </div>
+
+
+        </div>
+
+
+
+
 <script>
-    function openModal(){
-        let modal = document.querySelector('.modal-wrapper');
-        modal.style.display = 'block';
+    function openModal(event){
+        let target = event.target;
+        let id = target.getAttribute('data-target');
+        let modal = document.querySelector(id);
+        modal.classList.add('show');
     }  
     function closeModal(e){
         let parentElement = e.target.parentElement.parentElement.parentElement;
-        parentElement.style.display = 'none';
+        parentElement.classList.remove('show');
     }
 </script>
 </body>

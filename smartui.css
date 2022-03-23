@@ -87,6 +87,8 @@ color: rgba(255, 255, 255, 0.753);
     --box-shadow-color:rgba(0,0,0,0.75);
     --success-color:#13af4e;
     --danger-color:#ef1212;
+    --success-color-hover:#1b449b;
+    --danger-color-hover:rgb(174 37 37);
 }
 .btn {
     display: inline-block;
@@ -99,6 +101,13 @@ color: rgba(255, 255, 255, 0.753);
     border: 1px solid transparent;
     cursor: pointer;
     height: 2.25rem;
+}
+
+.btn.btn-primary:hover{
+    background-color: var(--success-color-hover);
+}
+.btn.btn-danger:hover{
+    background-color: var(--danger-color-hover);
 }
 
 .btn.btn-primary,.btn.btn.btn-outline-primary:hover {
@@ -714,3 +723,7 @@ Responsive image component
         top:30%;
         }
   }
+
+.position-static{
+    position:static;
+}
