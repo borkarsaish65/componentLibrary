@@ -1,3 +1,7 @@
+:root{
+    --card-border: 1px solid rgba(0,0,0,.125);
+    --toast-bg:#ffffffcc;
+}
 .toast-container {
     min-width: 15.625rem;
     position: fixed;
@@ -8,7 +12,7 @@
     font-size: 1.1em;
     left:80%;
     top:20%;
-    background-color: #ffffffcc;;
+    background-color: var(--toast-bg);
 }
 .toast-container.center{
     top:50%;
@@ -22,7 +26,7 @@
 }
 
 .toast-container .toast-body {
-    border:1px solid rgba(0,0,0,.125);
+    border:var(card-border);
     padding:1px 5px;
 }
 
