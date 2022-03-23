@@ -5,44 +5,216 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="../../main.css">
-    <link rel="stylesheet" href="list.css">
-    <link rel="stylesheet" href="../responsive-image-component/image.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../smartui.css">
+    <title>List</title>
 </head>
 <body>
-    <div class="container">
-        <div class="list-collection-container">
-    
-            <ul class="list-collection list-style-none">
-                <div class="list-heading">
-                   Spaced List
-                </div>
-                <li class="list-item">Item A</li>
-                <li class="list-item">Item B</li>
-                <li class="list-item">Item C</li>
-                <li class="list-item">Item D</li>
+
+
+    <div class="header">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="#">Smart UI</a>
+            </div>
+            <ul class="navbar-list-collection">
+                <li class="navbar-list-item"><a href="#">Home</a></li>
+                <li class="navbar-list-item"><a href="#">Profile</a></li>
+                <li class="navbar-list-item"><a href="#">Setting</a></li>
             </ul>
-        </div>
-        <div class="img-example">
-            <img class="img-responsive" src="./spaced-list.png" alt="">
-        </div>
-         <div class="list-collection-container">
-    
-            <ul class="list-collection list-style-none list-stacked">
-                <div class="list-heading">
-                   Stacked List
-                </div>
-                <li class="list-item">Item A</li>
-                <li class="list-item">Item B</li>
-                <li class="list-item">Item C</li>
-                <li class="list-item">Item D</li>
-            </ul>
-        
-        </div>
-        <div class="img-example">
-            <img class="img-responsive" src="./stacked-list.png" alt="">
-        </div>
+        </nav>
     </div>
+    <div class="web-page">
+        <div class="aside">
+            <div class="list-collection-container mg-zero-auto">
+
+                <ul class="list-collection list-style-none">
+                    <div class="list-heading">
+                        Get Started
+                    </div>
+                    <li class="list-item">
+                        <a href="../intro.html">Installation</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="list-collection-container mg-zero-auto">
+
+                <ul class="list-collection list-style-none">
+                    <div class="list-heading">
+                        Components
+                    </div>
+                    <li class="list-item"><a href="../alert/alert.html">Alert</a></li>
+                    <li class="list-item"><a href="../avatar-component/avatar.html">Avatar</a></li>
+                    <li class="list-item"><a href="../badge/badge.html">Badge</a></li>
+                    <li class="list-item"><a href="../button/button.html">Button</a></li>
+                    <li class="list-item"><a href="../card-component/card.html">Card</a></li>
+                    <li class="list-item"><a href="../grid-component/grid.html">Grid</a></li>
+                    <li class="list-item"><a href="../input-component/input.html">Input</a></li>
+                    <li class="list-item active"><a href="../list-component/list.html">List</a></li>
+                    <li class="list-item"><a href="../modal-component/modal.html">Modal</a></li>
+                    <li class="list-item"><a href="../navigation-component/navigation.html">Navigation</a></li>
+                    <li class="list-item"><a href="../responsive-image-component/image.html">Image</a></li>
+                    <li class="list-item"><a href="../rating-component/rating.html">Rating</a></li>
+                    <li class="list-item"><a href="../toast-component/toast.html">Toast</a></li>
+                    <li class="list-item"><a href="../text-utilities/text-utilities.html">Typography</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+
+
+
+            <h5 class="h5">List</h5>
+            <p class="h6">List component allows us to show list of information together in an asthetic way.</p>
+
+            <h5 class="h5">
+                Spaced List
+            </h5>
+
+            <p class="h6">Below is the basic implementation of spaced list.</p>
+
+
+            <div class="demo-container background-white">
+
+
+                    <div class="list-collection-container mg-zero-auto">
+    
+                        <ul class="list-collection list-style-none">
+                            <div class="list-heading">
+                               Spaced List
+                            </div>
+                            <li class="list-item">Item A</li>
+                            <li class="list-item">Item B</li>
+                            <li class="list-item">Item C</li>
+                            <li class="list-item">Item D</li>
+                        </ul>
+                    </div>
+
+            </div>
+
+            <h5 class="h5">
+                Code Example
+            </h5>
+            <p class="h6">Below is the basic implementation html code of list.</p>
+
+            <div class="demo-container flex flex-all-center">
+                <pre><code class="xml">
+                    &lt;div class="list-collection-container"&gt;
+    
+                        &lt;ul class="list-collection list-style-none"&gt;
+                            &lt;div class="list-heading"&gt;
+                               Spaced List
+                            &lt;/div&gt;
+                            &lt;li class="list-item"&gt;Item A&lt;/li&gt;
+                            &lt;li class="list-item"&gt;Item B&lt;/li&gt;
+                            &lt;li class="list-item"&gt;Item C&lt;/li&gt;
+                            &lt;li class="list-item"&gt;Item D&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                </code></pre>
+            </div>
+
+
+            <h5 class="h5">
+                Stacked List
+            </h5>
+
+            <p class="h6">Stacked list are list with spaces between each list item.</p>
+
+
+            <div class="demo-container background-white">
+
+
+                <div class="list-collection-container mg-zero-auto">
+    
+                    <ul class="list-collection list-style-none list-stacked">
+                        <div class="list-heading">
+                           Stacked List
+                        </div>
+                        <li class="list-item">Item A</li>
+                        <li class="list-item">Item B</li>
+                        <li class="list-item">Item C</li>
+                        <li class="list-item">Item D</li>
+                    </ul>
+                
+                </div>
+
+            </div>
+
+            <h5 class="h5">
+                Code Example
+            </h5>
+            <p class="h6">Below is the basic implementation html code of Stacked list.</p>
+
+            <div class="demo-container flex flex-all-center">
+                <pre><code class="xml">
+                    &lt;div class="list-collection-container"&gt;
+    
+                    &lt;ul class="list-collection list-style-none list-stacked"&gt;
+                        &lt;div class="list-heading"&gt;
+                           Stacked List
+                        &lt;/div&gt;
+                        &lt;li class="list-item"&gt;Item A&lt;/li&gt;
+                        &lt;li class="list-item"&gt;Item B&lt;/li&gt;
+                        &lt;li class="list-item"&gt;Item C&lt;/li&gt;
+                        &lt;li class="list-item"&gt;Item D&lt;/li&gt;
+                    &lt;/ul&gt;
+                
+                &lt;/div&gt;
+                </code></pre>
+            </div>
+
+
+            <h5 class="h5">
+                Active List Item
+            </h5>
+
+            <p class="h6">You can set active state on the stack element. You can use 'active' class to show the active state of list item.</p>
+
+
+            <div class="demo-container background-white">
+
+
+                <div class="list-collection-container mg-zero-auto">
+    
+                    <ul class="list-collection list-style-none list-stacked">
+                        <div class="list-heading">
+                           Stacked List
+                        </div>
+                        <li class="list-item">Item A</li>
+                        <li class="list-item">Item B</li>
+                        <li class="list-item active">Item C</li>
+                        <li class="list-item">Item D</li>
+                    </ul>
+                
+                </div>
+
+            </div>
+
+            <h5 class="h5">
+                Code Example
+            </h5>
+
+            <div class="demo-container flex flex-all-center">
+                <pre><code class="xml">
+                    &lt;div class="list-collection-container"&gt;
+    
+                    &lt;ul class="list-collection list-style-none list-stacked"&gt;
+                        &lt;div class="list-heading"&gt;
+                           Stacked List
+                        &lt;/div&gt;
+                        &lt;li class="list-item"&gt;Item A&lt;/li&gt;
+                        &lt;li class="list-item"&gt;Item B&lt;/li&gt;
+                        &lt;li class="list-item active"&gt;Item C&lt;/li&gt;
+                        &lt;li class="list-item"&gt;Item D&lt;/li&gt;
+                    &lt;/ul&gt;
+                
+                &lt;/div&gt;
+                </code></pre>
+            </div>
+
+
+
+</div>
 
 </body>
 </html>

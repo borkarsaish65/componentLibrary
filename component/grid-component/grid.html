@@ -5,39 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="../../main.css">
-    <link rel="stylesheet" href="../button/button.css">
-    <link rel="stylesheet" href="../responsive-image-component/image.css">
     <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="../../smartui.css">
     <title>
         Grid Compnent
     </title>
 </head>
 <body>
 
-    <div class="container">
-    
-        <h3>Grid with two items.</h3>
-        <p>This is a basic grid layout containing two child elements.</p>
-        <p>This layout can be created with grid-column-2 and grid-container class together.</p>
-        <div class="container">
-            <div class="grid-example">
-                <div class="grid-container grid-column-2 grid-gap-example">
-                    <div class="grid-items grid-item-example">
+    <div class="header">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="#">Smart UI</a>
+            </div>
+            <ul class="navbar-list-collection">
+                <li class="navbar-list-item"><a href="#">Home</a></li>
+                <li class="navbar-list-item"><a href="#">Profile</a></li>
+                <li class="navbar-list-item"><a href="#">Setting</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="web-page">
+        <div class="aside">
+            <div class="list-collection-container mg-zero-auto">
+
+                <ul class="list-collection list-style-none">
+                    <div class="list-heading">
+                        Get Started
                     </div>
-                    <div class="grid-items grid-item-example">
+                    <li class="list-item">
+                        <a href="../intro.html">Installation</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="list-collection-container mg-zero-auto">
+
+                <ul class="list-collection list-style-none">
+                    <div class="list-heading">
+                        Components
                     </div>
-                </div>
+                    <li class="list-item"><a href="../alert/alert.html">Alert</a></li>
+                    <li class="list-item"><a href="../avatar-component/avatar.html">Avatar</a></li>
+                    <li class="list-item"><a href="../badge/badge.html">Badge</a></li>
+                    <li class="list-item"><a href="../button/button.html">Button</a></li>
+                    <li class="list-item"><a href="../card-component/card.html">Card</a></li>
+                    <li class="list-item active"><a href="../grid-component/grid.html">Grid</a></li>
+                    <li class="list-item"><a href="../input-component/input.html">Input</a></li>
+                    <li class="list-item"><a href="../list-component/list.html">List</a></li>
+                    <li class="list-item"><a href="../modal-component/modal.html">Modal</a></li>
+                    <li class="list-item"><a href="../navigation-component/navigation.html">Navigation</a></li>
+                    <li class="list-item"><a href="../responsive-image-component/image.html">Image</a></li>
+                    <li class="list-item"><a href="../rating-component/rating.html">Rating</a></li>
+                    <li class="list-item"><a href="../toast-component/toast.html">Toast</a></li>
+                    <li class="list-item"><a href="../text-utilities/text-utilities.html">Typography</a></li>
+                </ul>
             </div>
         </div>
+        <div class="content">
+            <h5 class="h5">
+                Grid
+            </h5>
 
-        <div class="code-example">
-            <img class="img-responsive" src="./grid-example-1.png" alt="">
-        </div>
+            <p class="h6">Grid is a 2D grid based layout system which makes use of rows and columns to make designing web pages easy.</p>
 
-        <h3>Grid with three items.</h3>
-        <p>This layout can be created with grid-column-3 and grid-container class together.</p>
-        <div class="container">
-            <div class="grid-example">
+            <p class="h5">Grid with two items.</p>
+            <div class="demo-container background-white">
+
+
+                <div class="grid-example">
+                    <div class="grid-container grid-column-2 grid-gap-example">
+                        <div class="grid-items grid-item-example">
+                        </div>
+                        <div class="grid-items grid-item-example">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="h6">This is a basic grid layout containing two child elements.</p>
+
+             <p class="h6">This layout can be created with grid-column-2 and grid-container class together.</p>
+
+            <h5 class="h5">
+                Code Example
+            </h5>
+
+            <div class="demo-container flex flex-all-center">
+                <pre><code class="xml">
+                    &lt;div class="grid-example"&gt;
+                    &lt;div class="grid-container grid-column-2 grid-gap-example"&gt;
+                        &lt;div class="grid-items grid-item-example"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="grid-items grid-item-example"&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                </code></pre>
+            </div>
+
+
+
+            <h5 class="h5">
+                Grid with three items.
+            </h5>
+
+            <p class="h6">This layout can be created with grid-column-3 and grid-container class together.</p>
+            <div class="demo-container background-white">
+
+
                 <div class="grid-container grid-column-3 grid-gap-example ">
                     <div class="grid-items grid-item-example">
                     </div>
@@ -46,11 +122,29 @@
                     <div class="grid-items grid-item-example">
                     </div>
                 </div>
+
             </div>
-        </div>
-        <div class="code-example">
-            <img class="img-responsive" src="./grid-example-2.png" alt="">
-        </div>
-    </div>
+
+            <p class="h6">This is a basic grid layout containing three child elements.</p>
+
+             <p class="h6">This layout can be created with grid-column-3 and grid-container class together.</p>
+
+             <h5 class="h5">
+                Code Example
+            </h5>
+
+            <div class="demo-container flex flex-all-center">
+                <pre><code class="xml">
+                    &lt;div class="grid-container grid-column-3 grid-gap-example "&gt;
+                    &lt;div class="grid-items grid-item-example"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="grid-items grid-item-example"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="grid-items grid-item-example"&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;  
+                </code></pre>
+            </div>
+</div>
 </body>
 </html>

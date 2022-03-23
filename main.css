@@ -75,7 +75,7 @@ body{
 }
 .web-page .aside {
     width:250px;
-    height: 100vh;
+    height: calc(100vh - 3.125rem);
     padding:1rem;
     position: fixed;
     overflow-y: auto;
