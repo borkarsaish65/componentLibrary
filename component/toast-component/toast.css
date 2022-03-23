@@ -1,0 +1,50 @@
+:root{
+    --card-border: 1px solid rgba(0,0,0,.125);
+    --toast-bg:#ffffffcc;
+}
+.toast-container {
+    min-width: 15.625rem;
+    position: fixed;
+    z-index: 1;
+    border-radius: 8px;
+    animation-name: toast-animation;
+    animation-duration: 2s;
+    font-size: 1.1em;
+    left:80%;
+    top:20%;
+    background-color: var(--toast-bg);
+}
+.toast-container.center{
+    top:50%;
+    left:calc(50% - 15.524rem/2);
+    animation: toast-center-animation;
+    animation-duration: 2s;
+}
+.toast-container .toast-header {
+    padding:5px;
+    background-color: rgb(215 215 215 / 64%);
+}
+
+.toast-container .toast-body {
+    border:var(card-border);
+    padding:1px 5px;
+}
+
+@keyframes toast-animation {
+    from { 
+        left:80%;
+        top:20%;
+    }
+    to {
+        top:5%;
+        }
+  }
+
+  @keyframes toast-center-animation {
+    from { 
+        top:50%;
+    }
+    to {
+        top:30%;
+        }
+  }
