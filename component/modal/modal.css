@@ -1,6 +1,8 @@
 :root{
     --background-shadow:rgba(0,0,0,0.4);
+    --modal-border:1px solid rgb(0 0 0 / 39%);
 }
+
 .modal {
     position: absolute;
     background-color: white;
@@ -8,26 +10,31 @@
     top: 50%;
     transform: translate(-50%, -50%);
     max-width: 25rem;
-    border:1px solid rgb(0 0 0 / 39%);
+    border:var(--modal-border);
     padding:20px;
     border-radius: 5px;
 }
+
 .modal button{
     cursor: pointer;
 }
+
 .modal .modal-close{
     border: none;
     background-color: white;
     font-size: 1.5rem;
 }
+
 .modal .modal-heading h2 {
     margin: 0;
 }
+
 .modal .modal-heading {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .modal .modal-cta
 {
     display: flex;
@@ -35,9 +42,11 @@
     margin: 0 auto;
     justify-content: space-evenly;
 }
+
 .text-center {
     text-align: center;
 }
+
 .modal-wrapper {
   display: none;
   position: fixed;
