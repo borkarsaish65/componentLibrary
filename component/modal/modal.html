@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="../button/button.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="modal-wrapper">
+        <div class="modal">
+            <div class="modal-heading">
+                <h2 class="text-center">
+                    You have opened a smart ui modal.
+                </h2>
+                <button onclick="closeModal(event)" class="modal-close">
+                    X
+                </button>
+            </div>
+            <div class="modal-content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident nisi tenetur corrupti! Cumque voluptatem animi pariatur, culpa assumenda natus ipsam dolor quisquam harum fugit cu?</p>
+            </div>
+            <div class="modal-cta">
+                <button class="btn btn-primary">
+                    Yes
+                </button>
+                <button class="btn btn-danger">
+                    No
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="openModal()">Open Modal</button>
+<script>
+    function openModal(){
+        let modal = document.querySelector('.modal-wrapper');
+        modal.style.display = 'block';
+    }  
+    function closeModal(e){
+        let parentElement = e.target.parentElement.parentElement.parentElement;
+        parentElement.style.display = 'none';
+    }
+</script>
+</body>
+</html>

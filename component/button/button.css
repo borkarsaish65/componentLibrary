@@ -18,6 +18,18 @@
     background-color: var(--primary-color);
     color:white;
 }
+.btn-danger {
+    background-color: rgb(255, 62, 62);
+    color:white;
+}
+
+.btn.btn-primary:hover{
+    background-color: #1b449b;
+}
+.btn.btn-danger:hover{
+    background-color: rgb(174 37 37);;
+}
+
 .btn-secondary {
     background-color: var(--secondary-color);
     color:white;  
@@ -52,7 +64,6 @@
 
 .btn-large {
     font-size: 4.25rem;
-
 }
 
 .btn-outline-primary {
